@@ -2,8 +2,9 @@ package com.revature.map;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -23,8 +24,11 @@ import com.revature.model.Schema;
 public class GenderDataByCountryWithYearAndPercentageMapper extends Mapper<LongWritable, Text, Text, Text>{	
 	private static Logger LOGGER = Logger.getLogger(GenderDataSchemaImpl.class);
 	public static Schema SCHEMA = new GenderDataSchemaImpl();
-	private static final List<String> YEARS = new ArrayList<>();
-	private static final List<String> TARGET_INDICATOR_CODES = new ArrayList<>();
+	public static double MAX_VALUE_EXCLUSIVE = 30;
+	public static double MIN_VALUE_INCLUSIVE = 0;
+	public static final List<String> YEARS = new ArrayList<>();
+	public static final List<String> TARGET_INDICATOR_CODES = new ArrayList<>();
+	public static final Map<String, String> INDICATOR_TITLE_MAP = new HashMap<>();
 	
 	static {
 		LOGGER.trace("Default static setup");
@@ -33,6 +37,23 @@ public class GenderDataByCountryWithYearAndPercentageMapper extends Mapper<LongW
 		for(int i = 1960; i <= 2016; i++) {
 			YEARS.add(Integer.toString(i));
 		}
+		INDICATOR_TITLE_MAP.put("SE.PRM.CUAT.FE.ZS", "Female-Primary");
+		INDICATOR_TITLE_MAP.put("SE.SEC.CUAT.LO.FE.ZS", "Female-Lower-Secondary");
+		INDICATOR_TITLE_MAP.put("SE.SEC.CUAT.UP.FE.ZS", "Female-Upper-Secondary");
+		INDICATOR_TITLE_MAP.put("SE.SEC.CUAT.PO.FE.ZS", "Female-Post-Secondary");
+		INDICATOR_TITLE_MAP.put("SE.TER.CUAT.ST.FE.ZS", "Female-Short-Cycle-Ternary");
+		INDICATOR_TITLE_MAP.put("SE.TER.CUAT.BA.FE.ZS", "Female-Bachelor's");
+		INDICATOR_TITLE_MAP.put("SE.TER.CUAT.BS.FE.ZS", "Female-Master's");
+		INDICATOR_TITLE_MAP.put("SE.TER.CUAT.DO.FE.ZS", "Female-Doctoral");
+		
+		INDICATOR_TITLE_MAP.put("SE.PRM.CUAT.MA.ZS", "Male-Primary");
+		INDICATOR_TITLE_MAP.put("SE.SEC.CUAT.UP.MA.ZS", "Male-Upper-Secondary");
+		INDICATOR_TITLE_MAP.put("SE.SEC.CUAT.LO.MA.ZS", "Male-Lower-Secondary");
+		INDICATOR_TITLE_MAP.put("SE.SEC.CUAT.PO.MA.ZS", "Male-Post-Secondary");
+		INDICATOR_TITLE_MAP.put("SE.TER.CUAT.ST.MA.ZS", "Male-Short-Cycle-Ternary");
+		INDICATOR_TITLE_MAP.put("SE.TER.CUAT.BA.MA.ZS", "Male-Bachelor's");
+		INDICATOR_TITLE_MAP.put("SE.TER.CUAT.BS.MA.ZS", "Male-Master's");
+		INDICATOR_TITLE_MAP.put("SE.TER.CUAT.DO.MA.ZS", "Male-Doctoral");
 	}
 
 	@Override
@@ -42,57 +63,32 @@ public class GenderDataByCountryWithYearAndPercentageMapper extends Mapper<LongW
 		
 		Schema genderSchema = SCHEMA.getNewSchema();
 		genderSchema.addRow(value.toString(), "\",\"");
-
-		if(TARGET_INDICATOR_CODES.contains(genderSchema.getValueFromColumnName("INDICATOR_CODE"))) {
-			double percentage;
-			String output;
+		String indicatorCode = genderSchema.getValueFromColumnName("INDICATOR_CODE");
+		
+		
+		if(TARGET_INDICATOR_CODES.contains(indicatorCode)) {
+			Double percentage;
+			String outputValue;
+			String indicatorTitle = INDICATOR_TITLE_MAP.get(indicatorCode);
 			String countryName = genderSchema.getValueFromColumnName("COUNTRY_NAME");
+			String outputKey = countryName + ", "+ indicatorTitle ;
+			//String outputKey = countryName;
+		
 
 			for(String year: YEARS){
 				try {
-					percentage = Double.parseDouble(genderSchema.getValueFromColumnName(year));
+					percentage = Double.valueOf(genderSchema.getValueFromColumnName(year));
 				}catch(NumberFormatException e) {
-					percentage = -1;
+					percentage = null;
 				}
 
-				if(percentage != -1 && percentage < 30.0) {
-					output = String.format("%s, %.2f%%", year, percentage);			
-					context.write(new Text(countryName), 
-							new Text(output));
+				if(percentage != null && percentage >= MIN_VALUE_INCLUSIVE && percentage < MAX_VALUE_EXCLUSIVE) {
+					outputValue = String.format("%s, %.2f%%", year, percentage);			
+					context.write(new Text(outputKey), 
+							new Text(outputValue));
 				}
 			}
 		}
 	}
-	public static void setIndicatorCodes(String... codes) {
-		LOGGER.trace(String.format("setIndicatorCodes(%s)", Arrays.toString(codes)));
-		//clear the previous indicator codes if set.
-		TARGET_INDICATOR_CODES.clear();
-
-		for(String code: codes) {
-			TARGET_INDICATOR_CODES.add(code);
-		}
-	}
-
-	public static void setSchema(Schema schema) {
-		LOGGER.trace(String.format("setSchema(%s)", schema));
-		SCHEMA = schema;
-	}
-	public static void setYears(String... years) {
-		LOGGER.trace(String.format("setYears(%s)", Arrays.toString(years)));
-		//clear the previous years if set.
-		YEARS.clear();
-		
-		for(String year : years) {
-			YEARS.add(year);
-		}
-	}
-	@Override
-	public String toString() {
-		return "SCHEMA = " + SCHEMA.toString() + 
-				" TARGET_CODES = " + TARGET_INDICATOR_CODES.toString() + 
-				" YEARS = " + YEARS.toString();
-	}
-	
-	
 }
  

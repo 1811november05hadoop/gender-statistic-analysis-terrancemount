@@ -66,6 +66,17 @@ public interface Schema {
 	void addRow(String row, String separator);
 	
 	/**
+	 * Puts the key/value pair into a map to be used when
+	 * generating mapper output. Put will override any 
+	 * previous values so becareful that important data is 
+	 * not lost. No duplicate keys allowed.
+	 * 
+	 * @param key a string key value for the map.
+	 * @param value a string for the value.
+	 */
+	void putData(String key, String value);
+	
+	/**
 	 * Clear the table map of any inputed rows. Useful for when
 	 * passing a schema to a static variable on a mapper.   
 	 */

@@ -11,6 +11,7 @@ public abstract class AbstractSchema implements Schema{
 	//reference to the static columns list in the child class.
 	private List<String> columns;
 	
+	//this constructor gets the columns static from the child class.  
 	public AbstractSchema() {
 		this.columns = getColumns();
 	}
@@ -30,7 +31,12 @@ public abstract class AbstractSchema implements Schema{
 			}
 		}
 	}
-
+	
+	@Override
+	public void putData(String key, String value) {
+		valueMap.put(key, value);
+	}
+	
 	@Override
 	public void clearRow() {
 		valueMap.clear();
