@@ -70,6 +70,9 @@ public class GenderDataByCountryWithYearAndDateTest {
 	@Test
 	public void testGenderDataMapReduce() {
 		
+	
+		
+		
 		//correct indicator code with two correct values.  
 		mapReduceDriver.withInput(new LongWritable(1), 
 				new Text("\"Arab World\",\"ARB\",\"Educational attainment, "
@@ -106,11 +109,27 @@ public class GenderDataByCountryWithYearAndDateTest {
 						+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
 						+ "\"3\",\"10\",\"6\""));
 		
+		//incorrect indicator code with correct values
+		mapReduceDriver.withInput(new LongWritable(4), 
+				new Text("\"United States\",\"ARB\",\"Educational attainment, "
+						+ "at least completed upper secondary, population 25+, "
+						+ "female (%) (cumulative)\",\"SE.PRM.CUAT.FE.ZS\""
+						+ ",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
+						+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
+						+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
+						+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
+						+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
+						+ "\"3\",\"10\",\"6\""));
+	
 		mapReduceDriver.withOutput(new Text("Arab World, Female-Upper-Secondary"), 
 				new Text("2015, 16.00% | 2016, 20.00%"));
 		
+		mapReduceDriver.withOutput(new Text("United States, Female-Primary"), 
+				new Text("2014, 3.00% | 2015, 10.00% | 2016, 6.00%"));
 		mapReduceDriver.withOutput(new Text("United States, Female-Upper-Secondary"), 
 				new Text("2015, 10.00%"));
+		
+		
 		mapReduceDriver.runTest();
 		
 	}

@@ -6,7 +6,7 @@
   
   <!-- Change name of jar to keep it simple -->
 	<build>
-		<finalName>GenderStatistics</finalName>
+		<finalName>GenStat</finalName>
 	</build>
 
 	<!-- Make project Java 8 -->
@@ -21,7 +21,7 @@
 			<groupId>jdk.tools</groupId>
 			<artifactId>jdk.tools</artifactId>
 			<scope>system</scope>
-			<version>1.8.0_191</version>
+			<version>1.8.0_172</version>
 			<systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>
 		</dependency>
 
