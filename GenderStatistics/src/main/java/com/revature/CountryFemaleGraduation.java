@@ -8,10 +8,10 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-import com.revature.map.GenderDataByCountryWithYearAndPercentageMapper;
-import com.revature.reduce.GenderDataReducer;
+import com.revature.map.CountryEdMapper;
+import com.revature.reduce.ValueConcantReducer;
 
-public class GradPercent {
+public class CountryFemaleGraduation {
 	public static void main(String... args) 
 			throws IOException, InterruptedException, ClassNotFoundException{
 		
@@ -23,7 +23,7 @@ public class GradPercent {
 		
 		Job job = new Job();
 		
-		job.setJarByClass(GradPercent.class);
+		job.setJarByClass(CountryFemaleGraduation.class);
 		
 		job.setJobName("Find Countries with female graduation under thirty.");
 		
@@ -33,8 +33,8 @@ public class GradPercent {
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
 		
 		
-		job.setMapperClass(GenderDataByCountryWithYearAndPercentageMapper.class);
-		job.setReducerClass(GenderDataReducer.class);
+		job.setMapperClass(CountryEdMapper.class);
+		job.setReducerClass(ValueConcantReducer.class);
 		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);

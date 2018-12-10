@@ -8,9 +8,7 @@ public class USFemaleEdAvgIncrease {
 		
 		//job
 		
-		
 		//set the job
-		
 		
 	}
 }

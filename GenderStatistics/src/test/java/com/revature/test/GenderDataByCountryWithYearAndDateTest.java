@@ -11,8 +11,8 @@ import org.apache.hadoop.mrunit.mapreduce.ReduceDriver;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.revature.map.GenderDataByCountryWithYearAndPercentageMapper;
-import com.revature.reduce.GenderDataReducer;
+import com.revature.map.CountryEdMapper;
+import com.revature.reduce.ValueConcantReducer;
 
 
 public class GenderDataByCountryWithYearAndDateTest {
@@ -23,12 +23,12 @@ public class GenderDataByCountryWithYearAndDateTest {
 	
 	@Before
 	public void setup() {
-		GenderDataByCountryWithYearAndPercentageMapper mapper = 
-				new GenderDataByCountryWithYearAndPercentageMapper();
+		CountryEdMapper mapper = 
+				new CountryEdMapper();
 		mapDriver = new MapDriver<LongWritable, Text, Text, Text>();
 		mapDriver.setMapper(mapper);
 		
-		GenderDataReducer reducer = new GenderDataReducer();
+		ValueConcantReducer reducer = new ValueConcantReducer();
 		reduceDriver = new ReduceDriver<Text, Text, Text, Text>();
 		reduceDriver.setReducer(reducer);
 		
