@@ -58,12 +58,12 @@ public interface Schema {
 	String toStringColumnNames();
 	
 	/**
-	 * Add the row value from the input split of the mapper.  This function will
+	 * Put the row value from the input split of the mapper.  This function will
 	 * place all the row values into a map for later retrieval.
 	 * @param row a string containing all the values for that row.
 	 * @param separator is a string for the separator between the rows.  
 	 */
-	void addRow(String row, String separator);
+	void putRow(String row, String separator);
 	
 	/**
 	 * Puts the key/value pair into a map to be used when

@@ -11,20 +11,47 @@ import org.apache.hadoop.mrunit.mapreduce.ReduceDriver;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.revature.map.CountryEdMapper;
+import com.revature.config.MapConfig;
+import com.revature.map.CountryFemGradMapper;
+import com.revature.model.GenderDataSchemaImpl;
 import com.revature.reduce.ValueConcantReducer;
 
 
-public class GenderDataByCountryWithYearAndDateTest {
+public class CountryEdTest {
 	private MapDriver<LongWritable, Text, Text, Text> mapDriver;
 	private ReduceDriver<Text, Text, Text, Text> reduceDriver;
 	private MapReduceDriver
 		<LongWritable, Text, Text, Text, Text, Text> mapReduceDriver;
 	
+	public static final Text VALID_MAPPER_INPUT_1 = new Text("\"Arab World\",\"ARB\",\"Educational attainment, "
+			+ "at least completed upper secondary, population 25+, "
+			+ "female (%) (cumulative)\",\"SE.SEC.CUAT.UP.FE.ZS\""
+			+ ",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
+			+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
+			+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
+			+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
+			+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
+			+ "\"50\",\"16\",\"20\"");
+	public static final Text VALID_MAPPER_OUTPUT_1_KEY = new Text("Arab World, Female-Upper-Secondary");
+	public static final Text VALID_MAPPER_OUTPUT_1_VALUE_1 = new Text("2015, 16.00%");
+	public static final Text VALID_MAPPER_OUTPUT_1_VALUE_2 = new Text("2016, 20.00%");
+	
+	
 	@Before
 	public void setup() {
-		CountryEdMapper mapper = 
-				new CountryEdMapper();
+		MapConfig config = new MapConfig();
+		config.loadAllYears();
+		config.setValueRange(0.0, 30.0);
+		config.loadCummulativeEducationTitleMap();
+		config.loadFemaleCummulativeEducationCodes();
+		config.setSchema(new GenderDataSchemaImpl());
+		
+		CountryFemGradMapper mapper = 
+				new CountryFemGradMapper();
+		
+		//set the static config mapper
+		CountryFemGradMapper.config = config;
+		
 		mapDriver = new MapDriver<LongWritable, Text, Text, Text>();
 		mapDriver.setMapper(mapper);
 		
@@ -40,18 +67,9 @@ public class GenderDataByCountryWithYearAndDateTest {
 	
 	@Test
 	public void testGenderDataMapper() {
-		mapDriver.withInput(new LongWritable(1), 
-				new Text("\"Arab World\",\"ARB\",\"Educational attainment, "
-						+ "at least completed upper secondary, population 25+, "
-						+ "female (%) (cumulative)\",\"SE.SEC.CUAT.UP.FE.ZS\""
-						+ ",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
-						+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
-						+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
-						+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
-						+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
-						+ "\"50\",\"16\",\"20\""));
-		mapDriver.withOutput(new Text("Arab World, Female-Upper-Secondary"), new Text("2015, 16.00%"));
-		mapDriver.withOutput(new Text("Arab World, Female-Upper-Secondary"), new Text("2016, 20.00%"));
+		mapDriver.withInput(new LongWritable(1), VALID_MAPPER_INPUT_1);
+		mapDriver.withOutput(VALID_MAPPER_OUTPUT_1_KEY, VALID_MAPPER_OUTPUT_1_VALUE_1);
+		mapDriver.withOutput(VALID_MAPPER_OUTPUT_1_KEY, VALID_MAPPER_OUTPUT_1_VALUE_2);
 		
 		mapDriver.runTest();
 	}
@@ -69,10 +87,6 @@ public class GenderDataByCountryWithYearAndDateTest {
 	
 	@Test
 	public void testGenderDataMapReduce() {
-		
-	
-		
-		
 		//correct indicator code with two correct values.  
 		mapReduceDriver.withInput(new LongWritable(1), 
 				new Text("\"Arab World\",\"ARB\",\"Educational attainment, "

@@ -17,7 +17,7 @@ public abstract class AbstractSchema implements Schema{
 	}
 	
 	@Override
-	public void addRow(String row, String separator) {
+	public void putRow(String row, String separator) {
 		String[] values = row.split(separator);
 		
 		String cleanValue;

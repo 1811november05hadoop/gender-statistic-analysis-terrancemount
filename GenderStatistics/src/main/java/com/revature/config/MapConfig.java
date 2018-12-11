@@ -14,7 +14,7 @@ public class MapConfig {
 	private boolean isRangeUsed = false;
 	private double maxValue = Double.MAX_VALUE;
 	private double minValue = Double.MIN_VALUE;
-	private Set<String> countries = new HashSet<>();
+	private Set<String> countryCodes = new HashSet<>();
 	private List<String> years = new ArrayList<>();
 	private Set<String> indicatorCodes = new HashSet<>();
 	private Map<String, String> titleMap = new HashMap<>();
@@ -30,8 +30,8 @@ public class MapConfig {
 	
 	/**
 	 * Sets the min and max value allowed.
-	 * @param minValue
-	 * @param maxValue
+	 * @param minValue a double for the min range
+	 * @param maxValue a double for the max range.  
 	 */
 	public void setValueRange(Double minValue, Double maxValue){
 		this.minValue = minValue;
@@ -49,12 +49,16 @@ public class MapConfig {
 	}
 	
 	/**
-	 * check if value is in the range. 
-	 * @param value
-	 * @return
-	 * @throws IllegalArgumentException
+	 * Check if value is in the range. Must min / max must
+	 * be set with the setValueRange method. 
+	 * Min is inclusive.
+	 * max is exclusive.   
+	 * @param value a double to check agains the min and max.
+	 * @return a true is in range, false if not. 
+	 * @throws IllegalArgumentException isRangeUsed is not set to true, use the
+	 * setValueRange to prevent this exception.  
 	 */
-	public boolean checkRangeExclusiveMax(Double value) throws IllegalArgumentException{
+	public boolean isInRangeExclusiveMax(Double value) throws IllegalArgumentException{
 		if(isRangeUsed){
 			return value >= minValue && value < maxValue;
 		}
@@ -69,25 +73,25 @@ public class MapConfig {
 	 * @return true if not countries are set or if countries contains
 	 * country.  False otherwise.
 	 */
-	public boolean isValidCountry(String country){
-		if(countries.size() == 0){
+	public boolean isValidCountryCode(String country){
+		if(countryCodes.size() == 0){
 			return true;
 		}
-		return countries.contains(country);
+		return countryCodes.contains(country);
 	}
 	
 	/**
-	 * Removes all countries from the country set.
+	 * Removes all countries from the country code set.
 	 */
-	public void clearCountries(){
-		countries.clear();
+	public void clearCountryCodes(){
+		countryCodes.clear();
 	}
 	/**
 	 * Adds a country to the country set.
 	 * @param country a String with the country name.
 	 */
-	public void addCountry(String country){
-		countries.add(country);
+	public void addCountryCode(String code){
+		countryCodes.add(code);
 	}
 	/**
 	 * Checks if the code is a valid code.  If no codes have
@@ -135,12 +139,19 @@ public class MapConfig {
 	/**
 	 * Load all years from 1960 to 2016
 	 */
-	public void defaultAllYears(){
-		for(int i = 1960; i <= 2016; i++) {
+	public void loadAllYears(){
+		addYearSeries(1960, 2016);
+	}
+	
+	public void addYearSeries(int start, int end){
+		for(int i = start; i <= end; i++) {
 			years.add(Integer.toString(i));
 		}
 	}
 	
+	public void addYear(int year){
+		years.add(Integer.toString(year));
+	}
 	/**
 	 * Clears all years from the table
 	 */
@@ -199,12 +210,12 @@ public class MapConfig {
 		this.minValue = minValue;
 	}
 
-	public Set<String> getCountries() {
-		return countries;
+	public Set<String> getCountryCodes() {
+		return countryCodes;
 	}
 
-	public void setCountries(Set<String> countries) {
-		this.countries = countries;
+	public void setCountryCodes(Set<String> countryCodes) {
+		this.countryCodes = countryCodes;
 	}
 
 	public List<String> getYears() {

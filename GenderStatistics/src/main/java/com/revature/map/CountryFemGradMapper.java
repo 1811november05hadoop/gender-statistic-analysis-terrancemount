@@ -16,41 +16,39 @@ import com.revature.model.Schema;
  * @author Terrance Mount
  *
  */
-public class CountryEdMapper extends Mapper<LongWritable, Text, Text, Text>{	
+public class CountryFemGradMapper extends Mapper<LongWritable, Text, Text, Text>{	
 	public static MapConfig config;
 
 	@Override
 	public void map(LongWritable key, Text value, Context context) 
 			throws IOException, InterruptedException {
-
-		Schema genderSchema = config.getNewSchema();
-		genderSchema.addRow(value.toString(), "\",\"");
-
-		String indicatorCode = genderSchema.getValueFromColumnName("INDICATOR_CODE");
+		Schema schema = config.getSchema();
+		schema.putRow(value.toString(), "\",\"");
+		
+		String indicatorCode = schema.getValueFromColumnName("INDICATOR_CODE");
 		if(!config.isValidIndicatorCode(indicatorCode)){
 			return;
 		}
-
-		String countryName = genderSchema.getValueFromColumnName("COUNTRY_NAME");
-		if(!config.isValidCountry(indicatorCode)){
-			return;
-		}
-
+	
+//		String countryCode = genderSchema.getValueFromColumnName("COUNTRY_CODE");
+//		if(!config.isValidCountryCode(countryCode)){
+//			return;
+//		}
+	
 		Double percentage;
 		String indicatorTitle = config.getTitleMap().get(indicatorCode);
-		String outputKey = countryName + ", "+ indicatorTitle ;
-
+		String outputKey = schema.getValueFromColumnName("COUNTRY_NAME") + ", "+ indicatorTitle ;
+	
 		for(String year: config.getYears()){
 			try {
-				percentage = Double.valueOf(genderSchema.getValueFromColumnName(year));
+				percentage = Double.valueOf(schema.getValueFromColumnName(year));
 			}catch(NumberFormatException e) {
-				break;
+				continue;
 			}
 
-			if(config.checkRangeExclusiveMax(percentage)) {
+			if(config.isInRangeExclusiveMax(percentage))  {
 				String outputValue = String.format("%s, %.2f%%", year, percentage);			
-				context.write(new Text(outputKey), 
-						new Text(outputValue));
+				context.write(new Text(outputKey), new Text(outputValue));
 			}
 		}
 	}
