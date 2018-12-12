@@ -11,7 +11,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import com.revature.config.MapConfig;
 import com.revature.map.CountryFemGradMapper;
 import com.revature.model.GenderDataSchemaImpl;
-import com.revature.reduce.ValueConcantReducer;
+import com.revature.reduce.CountryFemGradReducer;
 
 public class CountryFemGradDriver {
 	public static void main(String... args) 
@@ -41,7 +41,7 @@ public class CountryFemGradDriver {
 		CountryFemGradMapper.config = config;
 		
 		job.setMapperClass(CountryFemGradMapper.class);
-		job.setReducerClass(ValueConcantReducer.class);
+		job.setReducerClass(CountryFemGradReducer.class);
 		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);

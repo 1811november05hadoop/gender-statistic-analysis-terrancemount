@@ -30,6 +30,10 @@ public class USFemEdDriver {
 		MapConfig config = new MapConfig();
 		config.addCountryCode("USA");
 		config.addIndicatorCode("SE.SEC.CUAT.UP.FE.ZS");
+		config.addIndicatorCode("SE.TER.HIAT.BA.FE.ZS");
+		config.addIndicatorCode("SE.TER.HIAT.DO.FE.ZS");
+		config.addIndicatorCode("SE.TER.HIAT.MS.FE.ZS");
+		config.addIndicatorCode("SE.TER.HIAT.ST.FE.ZS");
 		config.addYear(1980);
 		config.addYearSeries(2000, 2016);
 		USFemEdMapper.config = config;

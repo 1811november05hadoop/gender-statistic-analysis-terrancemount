@@ -7,9 +7,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.log4j.Logger;
+
 import com.revature.model.Schema;
 
 public class MapConfig {
+	private static Logger LOGGER = Logger.getLogger(MapConfig.class);
 	private Schema schema;
 	private boolean isRangeUsed = false;
 	private double maxValue = Double.MAX_VALUE;
@@ -25,6 +28,7 @@ public class MapConfig {
 	 * @return a copy of the schema.  
 	 */
 	public Schema getNewSchema(){
+		LOGGER.trace("getNewSchema() return a new copy of schema.");
 		return schema.getNewSchema();
 	}
 	
@@ -34,6 +38,7 @@ public class MapConfig {
 	 * @param maxValue a double for the max range.  
 	 */
 	public void setValueRange(Double minValue, Double maxValue){
+		LOGGER.trace(String.format("setValueRange(%f, %f)", minValue, maxValue));
 		this.minValue = minValue;
 		this.maxValue = maxValue;
 		isRangeUsed = true;
@@ -43,6 +48,7 @@ public class MapConfig {
 	 * Clears the range for this config.
 	 */
 	public void clearRange(){
+		LOGGER.trace("clearRange()");
 		this.minValue = Double.MIN_VALUE;
 		this.maxValue = Double.MAX_VALUE;
 		isRangeUsed = false;
@@ -59,6 +65,7 @@ public class MapConfig {
 	 * setValueRange to prevent this exception.  
 	 */
 	public boolean isInRangeExclusiveMax(Double value) throws IllegalArgumentException{
+		LOGGER.trace(String.format("isInRangeExclusiveMax(%f)", value));
 		if(isRangeUsed){
 			return value >= minValue && value < maxValue;
 		}
@@ -74,6 +81,7 @@ public class MapConfig {
 	 * country.  False otherwise.
 	 */
 	public boolean isValidCountryCode(String country){
+		LOGGER.trace(String.format("isValidCountryCode(%s)", country));
 		if(countryCodes.size() == 0){
 			return true;
 		}
@@ -84,6 +92,7 @@ public class MapConfig {
 	 * Removes all countries from the country code set.
 	 */
 	public void clearCountryCodes(){
+		LOGGER.trace(String.format("clearCountryCodes()"));
 		countryCodes.clear();
 	}
 	/**
@@ -91,6 +100,7 @@ public class MapConfig {
 	 * @param country a String with the country name.
 	 */
 	public void addCountryCode(String code){
+		LOGGER.trace(String.format("clearCountryCodes(%s)", code));
 		countryCodes.add(code);
 	}
 	/**
@@ -102,6 +112,7 @@ public class MapConfig {
 	 * set.  False otherwise.
 	 */
 	public boolean isValidIndicatorCode(String code){
+		LOGGER.trace(String.format("isValidIndicatorCode(%s)", code));
 		if(indicatorCodes.size() == 0){
 			return true;
 		}
@@ -112,6 +123,7 @@ public class MapConfig {
 	 * Removes all indicator codes.
 	 */
 	public void clearIndicatorCodes(){
+		LOGGER.trace(String.format("clearIndicatorCodes()"));
 		indicatorCodes.clear();
 	}
 	/**
@@ -119,6 +131,7 @@ public class MapConfig {
 	 * @param code a string containing the code.
 	 */
 	public void addIndicatorCode(String code){
+		LOGGER.trace(String.format("addIndicatorCode(%s)", code));
 		indicatorCodes.add(code);
 	}
 	
@@ -126,7 +139,7 @@ public class MapConfig {
 	 * Load default codes used with probem 1
 	 */
 	public void loadFemaleCummulativeEducationCodes(){
-		
+		LOGGER.trace(String.format("loadFemaleCummulativeEducationCodes()"));
 		indicatorCodes.add("SE.PRM.CUAT.FE.ZS");
 		indicatorCodes.add("SE.SEC.CUAT.UP.FE.ZS");
 		indicatorCodes.add("SE.SEC.CUAT.LO.FE.ZS");
@@ -140,25 +153,30 @@ public class MapConfig {
 	 * Load all years from 1960 to 2016
 	 */
 	public void loadAllYears(){
+		LOGGER.trace(String.format("loadAllYears()"));
 		addYearSeries(1960, 2016);
 	}
 	
 	public void addYearSeries(int start, int end){
+		LOGGER.trace(String.format("addYearSeries(%d, %d)", start, end));
 		for(int i = start; i <= end; i++) {
 			years.add(Integer.toString(i));
 		}
 	}
 	
 	public void addYear(int year){
+		LOGGER.trace(String.format("addYear(%d)", year));
 		years.add(Integer.toString(year));
 	}
 	/**
 	 * Clears all years from the table
 	 */
 	public void clearYears(){
+		LOGGER.trace(String.format("clearYears()"));
 		this.years.clear();
 	}
 	public void loadCummulativeEducationTitleMap(){
+		LOGGER.trace(String.format("loadCummulativeEducationTitleMap()"));
 		titleMap.put("SE.PRM.CUAT.FE.ZS", "Female-Primary");
 		titleMap.put("SE.SEC.CUAT.LO.FE.ZS", "Female-Lower-Secondary");
 		titleMap.put("SE.SEC.CUAT.UP.FE.ZS", "Female-Upper-Secondary");
@@ -167,15 +185,15 @@ public class MapConfig {
 		titleMap.put("SE.TER.CUAT.BA.FE.ZS", "Female-Bachelor's");
 		titleMap.put("SE.TER.CUAT.MS.FE.ZS", "Female-Master's");
 		titleMap.put("SE.TER.CUAT.DO.FE.ZS", "Female-Doctoral");
-
-		titleMap.put("SE.PRM.CUAT.MA.ZS", "Male-Primary");
-		titleMap.put("SE.SEC.CUAT.UP.MA.ZS", "Male-Upper-Secondary");
-		titleMap.put("SE.SEC.CUAT.LO.MA.ZS", "Male-Lower-Secondary");
-		titleMap.put("SE.SEC.CUAT.PO.MA.ZS", "Male-Post-Secondary");
-		titleMap.put("SE.TER.CUAT.ST.MA.ZS", "Male-Short-Cycle-Ternary");
-		titleMap.put("SE.TER.CUAT.BA.MA.ZS", "Male-Bachelor's");
-		titleMap.put("SE.TER.CUAT.BS.MA.ZS", "Male-Master's");
-		titleMap.put("SE.TER.CUAT.DO.MA.ZS", "Male-Doctoral");
+	}
+	
+	public void loadCompleteOnlyEducationTitleMap(){
+		LOGGER.trace(String.format("loadCompleteOnlyEducationTitleMap()"));
+		titleMap.put("SE.SEC.HIAT.UP.FE.ZS", "Female-Upper-Secondary-only");
+		titleMap.put("SE.TER.HIAT.ST.FE.ZS", "Female-Short-Cycle-Ternary-Highest");
+		titleMap.put("SE.TER.HIAT.BA.FE.ZS", "Female-Bachelor's-Highest");
+		titleMap.put("SE.TER.HIAT.MS.FE.ZS", "Female-Master's-Highest");
+		titleMap.put("SE.TER.HIAT.DO.FE.ZS", "Female-Doctoral-Highest");
 	}
 
 	public Schema getSchema() {

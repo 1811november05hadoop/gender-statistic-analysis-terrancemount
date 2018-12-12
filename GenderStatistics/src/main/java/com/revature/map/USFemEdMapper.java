@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.log4j.Logger;
 
 import com.revature.config.MapConfig;
 import com.revature.model.Schema;
@@ -17,14 +18,16 @@ import com.revature.model.Schema;
  *
  */
 public class USFemEdMapper extends Mapper<LongWritable, Text, Text, Text>{	
+	public static Logger LOGGER = Logger.getLogger(USFemEdMapper.class);
 	public static MapConfig config;
 
 	@Override
 	public void map(LongWritable key, Text value, Context context) 
 			throws IOException, InterruptedException {
+		LOGGER.trace(String.format("map(%s, %s, context)", key, value));
 		Schema schema = config.getSchema();
 		schema.putRow(value.toString(), "\",\"");
-
+		
 		String indicatorCode = schema.getValueFromColumnName("INDICATOR_CODE");
 		if(!config.isValidIndicatorCode(indicatorCode)){
 			return;
@@ -46,8 +49,8 @@ public class USFemEdMapper extends Mapper<LongWritable, Text, Text, Text>{
 			}
 
 			String outputValue = String.format("%s:%f", year, percentage);			
-			context.write(new Text(countryCode+":"+indicatorTitle), new Text(outputValue));
-
+			//context.write(new Text(countryCode+":"+indicatorTitle), new Text(outputValue));
+			System.out.println(countryCode+":"+indicatorTitle+ "," + outputValue);
 		}
 	}
 

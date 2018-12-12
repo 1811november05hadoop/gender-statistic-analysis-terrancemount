@@ -4,8 +4,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
+
 public abstract class AbstractSchema implements Schema{
-//	private static Logger LOGGER = Logger.getLogger(AbstractSchema.class);
+	private static Logger LOGGER = Logger.getLogger(AbstractSchema.class);
 	private Map<String, String> valueMap = new HashMap<>();
 	
 	//reference to the static columns list in the child class.
@@ -13,11 +15,13 @@ public abstract class AbstractSchema implements Schema{
 	
 	//this constructor gets the columns static from the child class.  
 	public AbstractSchema() {
+		LOGGER.trace("constructor(), calls getColumns from child class.");
 		this.columns = getColumns();
 	}
 	
 	@Override
 	public void putRow(String row, String separator) {
+		LOGGER.trace(String.format("putRow(%10s, %s) **truncated", row, separator));
 		String[] values = row.split(separator);
 		
 		String cleanValue;
@@ -34,16 +38,19 @@ public abstract class AbstractSchema implements Schema{
 	
 	@Override
 	public void putData(String key, String value) {
+		LOGGER.trace(String.format("putData(%s, %s)", key, value));
 		valueMap.put(key, value);
 	}
 	
 	@Override
 	public void clearRow() {
+		LOGGER.trace("clearRow()");
 		valueMap.clear();
 	}
 	
 	@Override
 	public String getValueFromColumnName(String columnName) {
+		LOGGER.trace(String.format("getValueFromColumnName(%s)", columnName));
 		String output = valueMap.get(columnName);
 		
 		if(output == null)
@@ -54,6 +61,7 @@ public abstract class AbstractSchema implements Schema{
 
 	@Override
 	public String getValueFromColumnIndex(int columnIndex) throws IndexOutOfBoundsException{
+		LOGGER.trace(String.format("getValueFromColumnIndex(%d)", columnIndex));
 		if(columnIndex < 0 || columnIndex >= columns.size()) {
 			throw new IndexOutOfBoundsException("index: " + columnIndex + " is not defined in the current schema.");
 		}
@@ -62,6 +70,7 @@ public abstract class AbstractSchema implements Schema{
 	
 	@Override
 	public String getColumnName(int columnIndex) {
+		LOGGER.trace(String.format("getColumnName(%d)", columnIndex));
 		if(columnIndex < 0 || columnIndex >= columns.size()) {
 			throw new IndexOutOfBoundsException("index: " + columnIndex + " is not defined in the current schema.");
 		}
@@ -70,26 +79,31 @@ public abstract class AbstractSchema implements Schema{
 
 	@Override
 	public int getColumnIndex(String columnName) {
+		LOGGER.trace(String.format("getColumnIndex(%s)", columnName));
 		return columns.indexOf(columnName);
 	}
 
 	@Override
 	public String[] getAllColumnNames() {
+		LOGGER.trace("getAllColumnNames()");
 		return columns.toArray(new String[0]);
 	}
 
 	@Override
 	public String toStringColumnNames() {
+		LOGGER.trace("toStringColumnNames()");
 		return columns.toString();
 	}
 
 	@Override
 	public int getNumberOfColumns() {
+		LOGGER.trace("getNumberOfColumns()");
 		return columns.size();
 	}
 
 	@Override
 	public boolean isSchemaEmpty() {
+		LOGGER.trace("isSchemaEmpty()");
 		return columns.isEmpty();
 	}
 

@@ -30,11 +30,6 @@ public class CountryFemGradMapper extends Mapper<LongWritable, Text, Text, Text>
 			return;
 		}
 	
-//		String countryCode = genderSchema.getValueFromColumnName("COUNTRY_CODE");
-//		if(!config.isValidCountryCode(countryCode)){
-//			return;
-//		}
-	
 		Double percentage;
 		String indicatorTitle = config.getTitleMap().get(indicatorCode);
 		String outputKey = schema.getValueFromColumnName("COUNTRY_NAME") + ", "+ indicatorTitle ;
