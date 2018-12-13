@@ -142,11 +142,7 @@ public class MapConfig {
 		LOGGER.trace(String.format("loadFemaleCummulativeEducationCodes()"));
 		indicatorCodes.add("SE.PRM.CUAT.FE.ZS");
 		indicatorCodes.add("SE.SEC.CUAT.UP.FE.ZS");
-		indicatorCodes.add("SE.SEC.CUAT.LO.FE.ZS");
-		indicatorCodes.add("SE.SEC.CUAT.PO.FE.ZS");
-		indicatorCodes.add("SE.TER.CUAT.ST.FE.ZS");
-		indicatorCodes.add("SE.TER.CUAT.BA.FE.ZS");
-		indicatorCodes.add("SE.TER.CUAT.MS.FE.ZS");			
+		indicatorCodes.add("SE.TER.CUAT.ST.FE.ZS");			
 	}
 	
 	/**
@@ -177,12 +173,12 @@ public class MapConfig {
 	}
 	public void loadCummulativeEducationTitleMap(){
 		LOGGER.trace(String.format("loadCummulativeEducationTitleMap()"));
-		titleMap.put("SE.PRM.CUAT.FE.ZS", "Female-Primary");
+		titleMap.put("SE.PRM.CUAT.FE.ZS", "Primary");
 		titleMap.put("SE.SEC.CUAT.LO.FE.ZS", "Female-Lower-Secondary");
-		titleMap.put("SE.SEC.CUAT.UP.FE.ZS", "Female-Upper-Secondary");
+		titleMap.put("SE.SEC.CUAT.UP.FE.ZS", "Secondary");
 		titleMap.put("SE.SEC.CUAT.PO.FE.ZS", "Female-Post-Secondary");
-		titleMap.put("SE.TER.CUAT.ST.FE.ZS", "Female-Short-Cycle-Ternary");
-		titleMap.put("SE.TER.CUAT.BA.FE.ZS", "Female-Bachelor's");
+		titleMap.put("SE.TER.CUAT.ST.FE.ZS", "Ternary");
+		titleMap.put("SE.TER.CUAT.BA.FE.ZS", "Ternary");
 		titleMap.put("SE.TER.CUAT.MS.FE.ZS", "Female-Master's");
 		titleMap.put("SE.TER.CUAT.DO.FE.ZS", "Female-Doctoral");
 	}

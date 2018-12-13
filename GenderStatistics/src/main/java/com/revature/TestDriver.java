@@ -7,7 +7,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.log4j.Logger;
 
 import com.revature.config.MapConfig;
-import com.revature.map.CountryFemGradMapper;
+import com.revature.map.CountryFemGradTextMapper;
 import com.revature.map.USFemEdMapper;
 import com.revature.model.GenderDataSchemaImpl;
 
@@ -18,23 +18,19 @@ public class TestDriver {
 		//testCountryFemMapper();
 		testUSFemEdDriver();
 		
-		
-		
-		
-		
 	}
 	
 	
 	public static void testCountryFemMapper() throws IOException, InterruptedException{
 		LOGGER.trace("testCountryFemMapper()");
-		CountryFemGradMapper mapper = new CountryFemGradMapper();
+		CountryFemGradTextMapper mapper = new CountryFemGradTextMapper();
 		MapConfig config = new MapConfig();
 		config.loadAllYears();
 		config.setValueRange(0.0, 30.0);
 		config.loadCummulativeEducationTitleMap();
 		config.loadFemaleCummulativeEducationCodes();
 		config.setSchema(new GenderDataSchemaImpl());
-		CountryFemGradMapper.config = config;
+		CountryFemGradTextMapper.config = config;
 		
 		Text VALID_MAPPER_INPUT_1 = new Text("\"Arab World\",\"ARB\",\"Educational attainment, "
 				+ "at least completed upper secondary, population 25+, "

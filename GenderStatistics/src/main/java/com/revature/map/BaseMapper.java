@@ -37,7 +37,7 @@ public class BaseMapper extends Mapper<LongWritable, Text, Text, Text>{
 	
 		Double percentage;
 		String indicatorTitle = config.getTitleMap().get(indicatorCode);
-		String outputKey = schema.getValueFromColumnName("COUNTRY_NAME") + ", "+ indicatorTitle ;
+		String outputKey = indicatorTitle + ", " + schema.getValueFromColumnName("COUNTRY_NAME");
 		boolean hasNoPercentage = true;
 		
 		for(String year: config.getYears()){
@@ -46,11 +46,11 @@ public class BaseMapper extends Mapper<LongWritable, Text, Text, Text>{
 			}catch(NumberFormatException e) {
 				continue;
 			}
-
+			
+			hasNoPercentage = false;
 			if(config.isInRangeExclusiveMax(percentage))  {
 				String outputValue = String.format("%s, %.2f%%", year, percentage);			
 				context.write(new Text(outputKey), new Text(outputValue));
-				hasNoPercentage = false;
 			}
 		}
 		
