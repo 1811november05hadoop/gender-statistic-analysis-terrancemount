@@ -9,6 +9,8 @@ import org.apache.log4j.Logger;
 public abstract class AbstractSchema implements Schema{
 	private static Logger LOGGER = Logger.getLogger(AbstractSchema.class);
 	private Map<String, String> valueMap = new HashMap<>();
+	private Map<Integer, Double> yearValues = new HashMap<>();
+	public static final int NUMBER_TEXT_COLUMNS = 4;
 	
 	//reference to the static columns list in the child class.
 	private List<String> columns;
@@ -22,17 +24,28 @@ public abstract class AbstractSchema implements Schema{
 	@Override
 	public void putRow(String row, String separator) {
 		LOGGER.trace(String.format("putRow(%10s, %s) **truncated", row, separator));
+		
 		String[] values = row.split(separator);
 		
 		String cleanValue;
 		
-		for(int i = 0; i < values.length; i++) {
-			if(i >= columns.size())
-				break;
+		for(int i = 0; i < NUMBER_TEXT_COLUMNS; i++) {
 			cleanValue = values[i].trim().replaceAll("\"", "");
 			if(cleanValue.length() > 0) {
 				valueMap.put(columns.get(i), cleanValue);
 			}
+		}
+		for(int i = NUMBER_TEXT_COLUMNS; i < values.length; i++){
+			cleanValue = values[i].trim().replaceAll("\"", "");
+			Integer year;
+			Double value;
+			try{
+				year = Integer.valueOf(columns.get(i));
+				value = Double.valueOf(cleanValue);
+			} catch (NumberFormatException e){
+				continue;
+			}
+			yearValues.put(year, value);
 		}
 	}
 	
@@ -41,11 +54,18 @@ public abstract class AbstractSchema implements Schema{
 		LOGGER.trace(String.format("putData(%s, %s)", key, value));
 		valueMap.put(key, value);
 	}
+	@Override
+	public void putData(Integer year, Double value){
+		LOGGER.trace(String.format("putData(%s, %s)", year, value));
+		yearValues.put(year, value);
+		
+	}
 	
 	@Override
 	public void clearRow() {
 		LOGGER.trace("clearRow()");
 		valueMap.clear();
+		yearValues.clear();
 	}
 	
 	@Override
@@ -58,7 +78,12 @@ public abstract class AbstractSchema implements Schema{
 		
 		return output;
 	}
-
+	
+	@Override
+	public Double getValueForYear(int year){
+		return yearValues.get(year);
+	}
+	
 	@Override
 	public String getValueFromColumnIndex(int columnIndex) throws IndexOutOfBoundsException{
 		LOGGER.trace(String.format("getValueFromColumnIndex(%d)", columnIndex));

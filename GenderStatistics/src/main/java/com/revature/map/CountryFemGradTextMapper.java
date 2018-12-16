@@ -1,14 +1,10 @@
 package com.revature.map;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
-import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-
 
 import com.revature.config.MapConfig;
 import com.revature.model.GenderDataSchemaImpl;

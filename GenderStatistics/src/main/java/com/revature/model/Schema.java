@@ -26,6 +26,13 @@ public interface Schema {
 	String getColumnName(int columnIndex) throws IndexOutOfBoundsException;
 	
 	/**
+	 * Returns a double for the year or a null value if not found.
+	 * @param year the year being requested.
+	 * @return a double for the value or null;
+	 */
+	public Double getValueForYear(int year);
+	
+	/**
 	 * Returns the column index for the given name.
 	 * @param columnName a string for the column name.
 	 * @return an integer representing the index or a -1 if the index was not found.
@@ -76,6 +83,13 @@ public interface Schema {
 	 */
 	void putData(String key, String value);
 	
+	/**
+	 * Maps a value in a year, value map. 
+	 * @param year an Integer for the year,
+	 * @param value a Double for the value associated for that year.
+	 */
+	void putData(Integer year, Double value);
+
 	/**
 	 * Clear the table map of any inputed rows. Useful for when
 	 * passing a schema to a static variable on a mapper.   

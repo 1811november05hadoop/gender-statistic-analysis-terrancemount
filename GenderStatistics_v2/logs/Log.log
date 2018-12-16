@@ -1,0 +1,511 @@
+2018-12-15 09:26:17 DEBUG MapReduceDriver:309 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20"))
+2018-12-15 09:26:18 DEBUG MapReduceDriver:324 - Starting reduce phase with reducer: com.revature.reduce.CountryPercentageReducer@2a17b7b6
+2018-12-15 09:26:18 ERROR TestDriver:352 - Missing expected output (Arab World, 2016:20.00%, 2015:16.00%) at position 0.
+2018-12-15 09:26:18 DEBUG TestDriver:173 - Reducing input (Iceland, (NO RECORDS))
+2018-12-15 09:26:18 TRACE CountryPercentageReducer:16 - reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@5faeada1, context)
+2018-12-15 09:26:18 DEBUG TestDriver:173 - Reducing input (Arab World, (2015:16.00%, 2015:16.00%))
+2018-12-15 09:26:18 TRACE CountryPercentageReducer:16 - reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@37d31475, context)
+2018-12-15 09:26:18 ERROR TestDriver:352 - Missing expected output (Arab World, 2016:20.00%, 2015:16.00%) at position 0.
+2018-12-15 09:26:18 ERROR TestDriver:352 - Received unexpected output (Arab World, ) at position 0.
+2018-12-15 09:26:18 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20")
+2018-12-15 09:26:18 ERROR TestDriver:352 - Missing expected output (Arab World, 2015:16.00%) at position 0.
+2018-12-15 09:26:18 ERROR TestDriver:352 - Missing expected output (Arab World, 2016:20.00%) at position 1.
+2018-12-15 09:30:10 DEBUG MapReduceDriver:309 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20"))
+2018-12-15 09:30:10 DEBUG MapReduceDriver:324 - Starting reduce phase with reducer: com.revature.reduce.CountryPercentageReducer@2a17b7b6
+2018-12-15 09:30:10 ERROR TestDriver:352 - Missing expected output (Arab World, 2016:20.00%, 2015:16.00%) at position 0.
+2018-12-15 09:30:10 DEBUG TestDriver:173 - Reducing input (Iceland, (NO RECORDS))
+2018-12-15 09:30:10 TRACE CountryPercentageReducer:16 - reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@5faeada1, context)
+2018-12-15 09:30:10 ERROR TestDriver:352 - Missing expected output (Iceland, NO RECORD) at position 0.
+2018-12-15 09:30:10 ERROR TestDriver:352 - Received unexpected output (Iceland, NO RECORDS) at position 0.
+2018-12-15 09:30:10 DEBUG TestDriver:173 - Reducing input (Arab World, (2015:16.00%, 2015:16.00%))
+2018-12-15 09:30:10 TRACE CountryPercentageReducer:16 - reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@436e852b, context)
+2018-12-15 09:30:10 ERROR TestDriver:352 - Missing expected output (Arab World, 2016:20.00%, 2015:16.00%) at position 0.
+2018-12-15 09:30:10 ERROR TestDriver:352 - Received unexpected output (Arab World, 2015:16.00%, 2015:16.00%) at position 0.
+2018-12-15 09:30:10 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20")
+2018-12-15 09:30:10 ERROR TestDriver:352 - Missing expected output (Arab World, 2015:16.00%) at position 0.
+2018-12-15 09:30:10 ERROR TestDriver:352 - Missing expected output (Arab World, 2016:20.00%) at position 1.
+2018-12-15 09:33:35 DEBUG TestDriver:173 - Reducing input (Arab World, (2015:16.00%, 2015:16.00%))
+2018-12-15 09:33:35 TRACE CountryPercentageReducer:16 - reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@131276c2, context)
+2018-12-15 09:33:35 DEBUG CountryPercentageReducer:32 - append(2015:16.00%)
+2018-12-15 09:33:35 DEBUG CountryPercentageReducer:29 - append(, )
+2018-12-15 09:33:35 DEBUG CountryPercentageReducer:32 - append(2015:16.00%)
+2018-12-15 09:33:35 ERROR TestDriver:352 - Missing expected output (Arab World, 2016:20.00%, 2015:16.00%) at position 0.
+2018-12-15 09:33:35 ERROR TestDriver:352 - Received unexpected output (Arab World, 2015:16.00%, 2015:16.00%) at position 0.
+2018-12-15 09:34:26 DEBUG MapReduceDriver:309 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20"))
+2018-12-15 09:34:26 DEBUG MapReduceDriver:324 - Starting reduce phase with reducer: com.revature.reduce.CountryPercentageReducer@2a17b7b6
+2018-12-15 09:34:26 ERROR TestDriver:352 - Missing expected output (Arab World, 2016:20.00%, 2015:16.00%) at position 0.
+2018-12-15 09:34:26 DEBUG TestDriver:173 - Reducing input (Iceland, (NO RECORDS))
+2018-12-15 09:34:26 TRACE CountryPercentageReducer:16 - reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@5faeada1, context)
+2018-12-15 09:34:26 DEBUG CountryPercentageReducer:32 - append(NO RECORDS)
+2018-12-15 09:34:26 ERROR TestDriver:352 - Missing expected output (Iceland, NO RECORD) at position 0.
+2018-12-15 09:34:27 ERROR TestDriver:352 - Received unexpected output (Iceland, NO RECORDS) at position 0.
+2018-12-15 09:34:27 DEBUG TestDriver:173 - Reducing input (Arab World, (2015:16.00%, 2016:20.00%))
+2018-12-15 09:34:27 TRACE CountryPercentageReducer:16 - reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@436e852b, context)
+2018-12-15 09:34:27 DEBUG CountryPercentageReducer:32 - append(2016:20.00%)
+2018-12-15 09:34:27 DEBUG CountryPercentageReducer:29 - append(, )
+2018-12-15 09:34:27 DEBUG CountryPercentageReducer:32 - append(2015:16.00%)
+2018-12-15 09:34:27 DEBUG TestDriver:225 - Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]
+2018-12-15 09:34:27 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20")
+2018-12-15 09:34:27 ERROR TestDriver:352 - Missing expected output (Arab World, 2015:16.00%) at position 0.
+2018-12-15 09:34:27 ERROR TestDriver:352 - Missing expected output (Arab World, 2016:20.00%) at position 1.
+2018-12-15 09:37:59 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20")
+2018-12-15 09:38:00 TRACE CountryPercentageMapper:41 - MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context<not shown>
+2018-12-15 09:38:00 ERROR TestDriver:352 - Missing expected output (Arab World, 2015:16.00%) at position 0.
+2018-12-15 09:38:00 ERROR TestDriver:352 - Missing expected output (Arab World, 2016:20.00%) at position 1.
+2018-12-15 09:41:59 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20")
+2018-12-15 09:41:59 TRACE CountryPercentageMapper:41 - MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context<not shown>
+2018-12-15 09:41:59 DEBUG TestDriver:225 - Matched expected output (Arab World, 2015:16.00%) at positions [0]
+2018-12-15 09:41:59 DEBUG TestDriver:225 - Matched expected output (Arab World, 2016:20.00%) at positions [1]
+2018-12-15 09:42:04 DEBUG MapReduceDriver:309 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20"))
+2018-12-15 09:42:04 TRACE CountryPercentageMapper:41 - MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context<not shown>
+2018-12-15 09:42:04 DEBUG MapReduceDriver:324 - Starting reduce phase with reducer: com.revature.reduce.CountryPercentageReducer@33f88ab
+2018-12-15 09:42:04 DEBUG MapReduceDriver:281 - Reducing input (Arab World, (2015:16.00%, 2016:20.00%))
+2018-12-15 09:42:04 TRACE CountryPercentageReducer:16 - reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@3cb1ffe6, context)
+2018-12-15 09:42:04 DEBUG CountryPercentageReducer:32 - append(2016:20.00%)
+2018-12-15 09:42:04 DEBUG CountryPercentageReducer:29 - append(, )
+2018-12-15 09:42:04 DEBUG CountryPercentageReducer:32 - append(2015:16.00%)
+2018-12-15 09:42:04 DEBUG TestDriver:225 - Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]
+2018-12-15 09:42:04 DEBUG TestDriver:173 - Reducing input (Iceland, (NO RECORDS))
+2018-12-15 09:42:04 TRACE CountryPercentageReducer:16 - reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@307f6b8c, context)
+2018-12-15 09:42:04 DEBUG CountryPercentageReducer:32 - append(NO RECORDS)
+2018-12-15 09:42:04 ERROR TestDriver:352 - Missing expected output (Iceland, NO RECORD) at position 0.
+2018-12-15 09:42:04 ERROR TestDriver:352 - Received unexpected output (Iceland, NO RECORDS) at position 0.
+2018-12-15 09:42:04 DEBUG TestDriver:173 - Reducing input (Arab World, (2015:16.00%, 2016:20.00%))
+2018-12-15 09:42:04 TRACE CountryPercentageReducer:16 - reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@3e57cd70, context)
+2018-12-15 09:42:04 DEBUG CountryPercentageReducer:32 - append(2016:20.00%)
+2018-12-15 09:42:04 DEBUG CountryPercentageReducer:29 - append(, )
+2018-12-15 09:42:04 DEBUG CountryPercentageReducer:32 - append(2015:16.00%)
+2018-12-15 09:42:04 DEBUG TestDriver:225 - Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]
+2018-12-15 09:42:04 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20")
+2018-12-15 09:42:04 TRACE CountryPercentageMapper:41 - MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context<not shown>
+2018-12-15 09:42:05 DEBUG TestDriver:225 - Matched expected output (Arab World, 2015:16.00%) at positions [0]
+2018-12-15 09:42:05 DEBUG TestDriver:225 - Matched expected output (Arab World, 2016:20.00%) at positions [1]
+2018-12-15 09:42:27 DEBUG MapReduceDriver:309 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20"))
+2018-12-15 09:42:27 TRACE CountryPercentageMapper:41 - MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context<not shown>
+2018-12-15 09:42:28 DEBUG MapReduceDriver:324 - Starting reduce phase with reducer: com.revature.reduce.CountryPercentageReducer@33f88ab
+2018-12-15 09:42:28 DEBUG MapReduceDriver:281 - Reducing input (Arab World, (2015:16.00%, 2016:20.00%))
+2018-12-15 09:42:28 TRACE CountryPercentageReducer:16 - reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@3cb1ffe6, context)
+2018-12-15 09:42:28 DEBUG CountryPercentageReducer:32 - append(2016:20.00%)
+2018-12-15 09:42:28 DEBUG CountryPercentageReducer:29 - append(, )
+2018-12-15 09:42:28 DEBUG CountryPercentageReducer:32 - append(2015:16.00%)
+2018-12-15 09:42:28 DEBUG TestDriver:225 - Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]
+2018-12-15 09:42:28 DEBUG TestDriver:173 - Reducing input (Iceland, (NO RECORDS))
+2018-12-15 09:42:28 TRACE CountryPercentageReducer:16 - reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@307f6b8c, context)
+2018-12-15 09:42:28 DEBUG CountryPercentageReducer:32 - append(NO RECORDS)
+2018-12-15 09:42:28 DEBUG TestDriver:225 - Matched expected output (Iceland, NO RECORDS) at positions [0]
+2018-12-15 09:42:28 DEBUG TestDriver:173 - Reducing input (Arab World, (2015:16.00%, 2016:20.00%))
+2018-12-15 09:42:28 TRACE CountryPercentageReducer:16 - reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@c46bcd4, context)
+2018-12-15 09:42:28 DEBUG CountryPercentageReducer:32 - append(2016:20.00%)
+2018-12-15 09:42:28 DEBUG CountryPercentageReducer:29 - append(, )
+2018-12-15 09:42:28 DEBUG CountryPercentageReducer:32 - append(2015:16.00%)
+2018-12-15 09:42:28 DEBUG TestDriver:225 - Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]
+2018-12-15 09:42:28 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20")
+2018-12-15 09:42:28 TRACE CountryPercentageMapper:41 - MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context<not shown>
+2018-12-15 09:42:28 DEBUG TestDriver:225 - Matched expected output (Arab World, 2015:16.00%) at positions [0]
+2018-12-15 09:42:28 DEBUG TestDriver:225 - Matched expected output (Arab World, 2016:20.00%) at positions [1]
+2018-12-15 10:21:15 DEBUG MapReduceDriver:309 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20"))
+2018-12-15 10:21:15 TRACE CountryPercentageMapper:41 - MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context<not shown>
+2018-12-15 10:21:15 DEBUG MapReduceDriver:324 - Starting reduce phase with reducer: com.revature.reduce.CountryPercentageReducer@33f88ab
+2018-12-15 10:21:15 DEBUG MapReduceDriver:281 - Reducing input (Arab World, (2015:16.00%, 2016:20.00%))
+2018-12-15 10:21:15 TRACE CountryPercentageReducer:17 - reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@3cb1ffe6, context)
+2018-12-15 10:21:15 DEBUG TestDriver:225 - Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]
+2018-12-15 10:21:15 DEBUG TestDriver:173 - Reducing input (Iceland, (NO RECORDS))
+2018-12-15 10:21:15 TRACE CountryPercentageReducer:17 - reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@307f6b8c, context)
+2018-12-15 10:21:15 DEBUG TestDriver:225 - Matched expected output (Iceland, NO RECORDS) at positions [0]
+2018-12-15 10:21:15 DEBUG TestDriver:173 - Reducing input (Arab World, (2015:16.00%, 2016:20.00%))
+2018-12-15 10:21:15 TRACE CountryPercentageReducer:17 - reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@c46bcd4, context)
+2018-12-15 10:21:15 DEBUG TestDriver:225 - Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]
+2018-12-15 10:21:15 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","50","16","20")
+2018-12-15 10:21:15 TRACE CountryPercentageMapper:41 - MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context<not shown>
+2018-12-15 10:21:15 DEBUG TestDriver:225 - Matched expected output (Arab World, 2015:16.00%) at positions [0]
+2018-12-15 10:21:15 DEBUG TestDriver:225 - Matched expected output (Arab World, 2016:20.00%) at positions [1]
+2018-12-15 13:28:43 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","ARB","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:28:44 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:28:44 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:28:44 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:28:44 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:28:44 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:28:44 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 13:28:44 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 13:29:52 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:29:52 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:29:52 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:29:52 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:29:52 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:29:52 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:29:52 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 13:29:52 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 13:33:00 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:33:00 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:33:00 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:33:00 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:33:00 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:33:00 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:33:00 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 13:33:00 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 13:35:06 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:35:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:35:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:35:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:35:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:35:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:35:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 13:35:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 13:35:34 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:35:34 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:35:34 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:35:34 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:35:34 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:35:34 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:35:34 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 13:35:34 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 13:35:56 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:35:57 TRACE ChangeMagnitudeMapper:47 - No Indicator
+2018-12-15 13:35:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:35:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:35:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:35:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:35:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:35:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 13:35:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 13:40:11 TRACE MapConfiguration:89 - SE.PRM.HIAT.FE.ZS
+2018-12-15 13:40:11 TRACE MapConfiguration:89 - SE.SEC.HIAT.LO.FE.ZS
+2018-12-15 13:40:11 TRACE MapConfiguration:89 - SE.SEC.HIAT.PO.FE.ZS
+2018-12-15 13:40:11 TRACE MapConfiguration:89 - SE.SEC.HIAT.UP.FE.ZS
+2018-12-15 13:40:11 TRACE MapConfiguration:89 - SE.TER.CUAT.DO.FE.ZS
+2018-12-15 13:40:11 TRACE MapConfiguration:89 - SE.TER.HIAT.BA.FE.ZS
+2018-12-15 13:40:11 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 13:40:11 TRACE MapConfiguration:89 - SE.TER.HIAT.MS.FE.ZS
+2018-12-15 13:40:11 TRACE MapConfiguration:89 - SE.TER.HIAT.ST.FE.ZS
+2018-12-15 13:40:11 TRACE MapConfiguration:89 - SE.NED.HIAT.FE.ZS
+2018-12-15 13:40:11 TRACE MapConfiguration:89 - SE.IPR.HIAT.FE.ZS
+2018-12-15 13:40:11 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.CUAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:40:11 TRACE ChangeMagnitudeMapper:47 - No Indicator
+2018-12-15 13:40:11 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:40:11 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:40:11 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:40:11 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:40:11 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:40:11 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 13:40:11 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 13:42:30 TRACE MapConfiguration:89 - SE.PRM.HIAT.FE.ZS
+2018-12-15 13:42:30 TRACE MapConfiguration:89 - SE.SEC.HIAT.LO.FE.ZS
+2018-12-15 13:42:30 TRACE MapConfiguration:89 - SE.SEC.HIAT.PO.FE.ZS
+2018-12-15 13:42:30 TRACE MapConfiguration:89 - SE.SEC.HIAT.UP.FE.ZS
+2018-12-15 13:42:30 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 13:42:30 TRACE MapConfiguration:89 - SE.TER.HIAT.BA.FE.ZS
+2018-12-15 13:42:30 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 13:42:30 TRACE MapConfiguration:89 - SE.TER.HIAT.MS.FE.ZS
+2018-12-15 13:42:30 TRACE MapConfiguration:89 - SE.TER.HIAT.ST.FE.ZS
+2018-12-15 13:42:30 TRACE MapConfiguration:89 - SE.NED.HIAT.FE.ZS
+2018-12-15 13:42:30 TRACE MapConfiguration:89 - SE.IPR.HIAT.FE.ZS
+2018-12-15 13:42:30 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:42:30 TRACE ChangeMagnitudeMapper:66 - MapConfiguration [indicatorCodes=[SE.IPR.HIAT.FE.ZS, SE.NED.HIAT.FE.ZS, SE.SEC.HIAT.LO.FE.ZS, SE.TER.HIAT.BA.FE.ZS, SE.PRM.HIAT.FE.ZS, SE.TER.HIAT.ST.FE.ZS, SE.SEC.HIAT.PO.FE.ZS, SE.SEC.HIAT.UP.FE.ZS, SE.TER.HIAT.MS.FE.ZS, SE.TER.HIAT.DO.FE.ZS], countryCodes=[USA], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.HIAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=USA}, yearValues={1999=40.0, 2014=50.0, 2015=10.0, 2016=20.0}], eariliestYear = 2000, context<not shown>
+2018-12-15 13:42:30 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 0.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 1.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 2.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 3.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 4.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 5.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 6.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 7.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 8.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 9.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 10.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 11.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 12.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 13.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 0.6666666666666666) at position 14.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, -40.0) at position 15.
+2018-12-15 13:42:30 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education -Secondary-Upper, 10.0) at position 16.
+2018-12-15 13:51:08 TRACE MapConfiguration:89 - SE.PRM.HIAT.FE.ZS
+2018-12-15 13:51:08 TRACE MapConfiguration:89 - SE.SEC.HIAT.LO.FE.ZS
+2018-12-15 13:51:08 TRACE MapConfiguration:89 - SE.SEC.HIAT.PO.FE.ZS
+2018-12-15 13:51:08 TRACE MapConfiguration:89 - SE.SEC.HIAT.UP.FE.ZS
+2018-12-15 13:51:08 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 13:51:08 TRACE MapConfiguration:89 - SE.TER.HIAT.BA.FE.ZS
+2018-12-15 13:51:08 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 13:51:08 TRACE MapConfiguration:89 - SE.TER.HIAT.MS.FE.ZS
+2018-12-15 13:51:08 TRACE MapConfiguration:89 - SE.TER.HIAT.ST.FE.ZS
+2018-12-15 13:51:08 TRACE MapConfiguration:89 - SE.NED.HIAT.FE.ZS
+2018-12-15 13:51:08 TRACE MapConfiguration:89 - SE.IPR.HIAT.FE.ZS
+2018-12-15 13:51:08 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:51:08 TRACE ChangeMagnitudeMapper:66 - MapConfiguration [indicatorCodes=[SE.IPR.HIAT.FE.ZS, SE.NED.HIAT.FE.ZS, SE.SEC.HIAT.LO.FE.ZS, SE.TER.HIAT.BA.FE.ZS, SE.PRM.HIAT.FE.ZS, SE.TER.HIAT.ST.FE.ZS, SE.SEC.HIAT.PO.FE.ZS, SE.SEC.HIAT.UP.FE.ZS, SE.TER.HIAT.MS.FE.ZS, SE.TER.HIAT.DO.FE.ZS], countryCodes=[USA], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.HIAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=USA}, yearValues={1999=40.0, 2014=50.0, 2015=10.0, 2016=20.0}], eariliestYear = 2000, context<not shown>
+2018-12-15 13:51:08 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Matched expected output (Arab World, Female-Education-Secondary-Upper, -40.0) but at incorrect position 15 (expected position 5)
+2018-12-15 13:51:08 ERROR TestDriver:352 - Matched expected output (Arab World, Female-Education-Secondary-Upper, 10.0) but at incorrect position 16 (expected position 6)
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 0.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 1.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 2.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 3.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 4.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 5.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 6.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 7.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 8.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 9.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 10.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 11.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 12.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 13.
+2018-12-15 13:51:08 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 14.
+2018-12-15 13:52:43 TRACE MapConfiguration:89 - SE.PRM.HIAT.FE.ZS
+2018-12-15 13:52:43 TRACE MapConfiguration:89 - SE.SEC.HIAT.LO.FE.ZS
+2018-12-15 13:52:43 TRACE MapConfiguration:89 - SE.SEC.HIAT.PO.FE.ZS
+2018-12-15 13:52:43 TRACE MapConfiguration:89 - SE.SEC.HIAT.UP.FE.ZS
+2018-12-15 13:52:43 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 13:52:43 TRACE MapConfiguration:89 - SE.TER.HIAT.BA.FE.ZS
+2018-12-15 13:52:43 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 13:52:43 TRACE MapConfiguration:89 - SE.TER.HIAT.MS.FE.ZS
+2018-12-15 13:52:43 TRACE MapConfiguration:89 - SE.TER.HIAT.ST.FE.ZS
+2018-12-15 13:52:43 TRACE MapConfiguration:89 - SE.NED.HIAT.FE.ZS
+2018-12-15 13:52:43 TRACE MapConfiguration:89 - SE.IPR.HIAT.FE.ZS
+2018-12-15 13:52:43 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:52:43 TRACE ChangeMagnitudeMapper:66 - MapConfiguration [indicatorCodes=[SE.IPR.HIAT.FE.ZS, SE.NED.HIAT.FE.ZS, SE.SEC.HIAT.LO.FE.ZS, SE.TER.HIAT.BA.FE.ZS, SE.PRM.HIAT.FE.ZS, SE.TER.HIAT.ST.FE.ZS, SE.SEC.HIAT.PO.FE.ZS, SE.SEC.HIAT.UP.FE.ZS, SE.TER.HIAT.MS.FE.ZS, SE.TER.HIAT.DO.FE.ZS], countryCodes=[USA], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.HIAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=USA}, yearValues={1999=40.0, 2014=50.0, 2015=10.0, 2016=20.0}], eariliestYear = 2000, context<not shown>
+2018-12-15 13:52:43 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 0.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 1.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 2.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 3.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 4.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 5.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 6.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 7.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 8.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 9.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 10.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 11.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 12.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 13.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2014, 0.6666666666666666) at position 14.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2015, -40.0) at position 15.
+2018-12-15 13:52:43 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper 2016, 10.0) at position 16.
+2018-12-15 13:58:06 TRACE MapConfiguration:89 - SE.PRM.HIAT.FE.ZS
+2018-12-15 13:58:06 TRACE MapConfiguration:89 - SE.SEC.HIAT.LO.FE.ZS
+2018-12-15 13:58:06 TRACE MapConfiguration:89 - SE.SEC.HIAT.PO.FE.ZS
+2018-12-15 13:58:06 TRACE MapConfiguration:89 - SE.SEC.HIAT.UP.FE.ZS
+2018-12-15 13:58:06 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 13:58:06 TRACE MapConfiguration:89 - SE.TER.HIAT.BA.FE.ZS
+2018-12-15 13:58:06 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 13:58:06 TRACE MapConfiguration:89 - SE.TER.HIAT.MS.FE.ZS
+2018-12-15 13:58:06 TRACE MapConfiguration:89 - SE.TER.HIAT.ST.FE.ZS
+2018-12-15 13:58:06 TRACE MapConfiguration:89 - SE.NED.HIAT.FE.ZS
+2018-12-15 13:58:06 TRACE MapConfiguration:89 - SE.IPR.HIAT.FE.ZS
+2018-12-15 13:58:06 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:58:06 TRACE ChangeMagnitudeMapper:66 - MapConfiguration [indicatorCodes=[SE.IPR.HIAT.FE.ZS, SE.NED.HIAT.FE.ZS, SE.SEC.HIAT.LO.FE.ZS, SE.TER.HIAT.BA.FE.ZS, SE.PRM.HIAT.FE.ZS, SE.TER.HIAT.ST.FE.ZS, SE.SEC.HIAT.PO.FE.ZS, SE.SEC.HIAT.UP.FE.ZS, SE.TER.HIAT.MS.FE.ZS, SE.TER.HIAT.DO.FE.ZS], countryCodes=[USA], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.HIAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=USA}, yearValues={1999=40.0, 2014=50.0, 2015=10.0, 2016=20.0}], eariliestYear = 2000, context<not shown>
+2018-12-15 13:58:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Matched expected output (Arab World, Female-Education-Secondary-Upper, -40.0) but at incorrect position 15 (expected position 5)
+2018-12-15 13:58:06 ERROR TestDriver:352 - Matched expected output (Arab World, Female-Education-Secondary-Upper, 10.0) but at incorrect position 16 (expected position 6)
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 0.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 1.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 2.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 3.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 4.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 5.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 6.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 7.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 8.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 9.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 10.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 11.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 12.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 13.
+2018-12-15 13:58:06 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper, 0.6666666666666666) at position 14.
+2018-12-15 13:58:56 TRACE MapConfiguration:89 - SE.PRM.HIAT.FE.ZS
+2018-12-15 13:58:56 TRACE MapConfiguration:89 - SE.SEC.HIAT.LO.FE.ZS
+2018-12-15 13:58:56 TRACE MapConfiguration:89 - SE.SEC.HIAT.PO.FE.ZS
+2018-12-15 13:58:56 TRACE MapConfiguration:89 - SE.SEC.HIAT.UP.FE.ZS
+2018-12-15 13:58:56 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 13:58:56 TRACE MapConfiguration:89 - SE.TER.HIAT.BA.FE.ZS
+2018-12-15 13:58:56 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 13:58:56 TRACE MapConfiguration:89 - SE.TER.HIAT.MS.FE.ZS
+2018-12-15 13:58:56 TRACE MapConfiguration:89 - SE.TER.HIAT.ST.FE.ZS
+2018-12-15 13:58:56 TRACE MapConfiguration:89 - SE.NED.HIAT.FE.ZS
+2018-12-15 13:58:56 TRACE MapConfiguration:89 - SE.IPR.HIAT.FE.ZS
+2018-12-15 13:58:56 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 13:58:57 TRACE ChangeMagnitudeMapper:66 - MapConfiguration [indicatorCodes=[SE.IPR.HIAT.FE.ZS, SE.NED.HIAT.FE.ZS, SE.SEC.HIAT.LO.FE.ZS, SE.TER.HIAT.BA.FE.ZS, SE.PRM.HIAT.FE.ZS, SE.TER.HIAT.ST.FE.ZS, SE.SEC.HIAT.PO.FE.ZS, SE.SEC.HIAT.UP.FE.ZS, SE.TER.HIAT.MS.FE.ZS, SE.TER.HIAT.DO.FE.ZS], countryCodes=[USA], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.HIAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=USA}, yearValues={1999=40.0, 2014=50.0, 2015=10.0, 2016=20.0}], eariliestYear = 2000, context<not shown>
+2018-12-15 13:58:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2009, 0.6666666666666666) at position 9.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2008, 0.6666666666666666) at position 8.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2007, 0.6666666666666666) at position 7.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2006, 0.6666666666666666) at position 6.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2005, 0.6666666666666666) at position 5.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2004, 0.6666666666666666) at position 4.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2003, 0.6666666666666666) at position 3.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2014, 0.6666666666666666) at position 14.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2002, 0.6666666666666666) at position 2.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2013, 0.6666666666666666) at position 13.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2001, 0.6666666666666666) at position 1.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2012, 0.6666666666666666) at position 12.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2000, 0.6666666666666666) at position 0.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2011, 0.6666666666666666) at position 11.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2010, 0.6666666666666666) at position 10.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2016, 10.0) at position 16.
+2018-12-15 13:58:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2015, -40.0) at position 15.
+2018-12-15 14:00:41 TRACE MapConfiguration:89 - SE.PRM.HIAT.FE.ZS
+2018-12-15 14:00:41 TRACE MapConfiguration:89 - SE.SEC.HIAT.LO.FE.ZS
+2018-12-15 14:00:41 TRACE MapConfiguration:89 - SE.SEC.HIAT.PO.FE.ZS
+2018-12-15 14:00:41 TRACE MapConfiguration:89 - SE.SEC.HIAT.UP.FE.ZS
+2018-12-15 14:00:41 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 14:00:41 TRACE MapConfiguration:89 - SE.TER.HIAT.BA.FE.ZS
+2018-12-15 14:00:41 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 14:00:41 TRACE MapConfiguration:89 - SE.TER.HIAT.MS.FE.ZS
+2018-12-15 14:00:41 TRACE MapConfiguration:89 - SE.TER.HIAT.ST.FE.ZS
+2018-12-15 14:00:41 TRACE MapConfiguration:89 - SE.NED.HIAT.FE.ZS
+2018-12-15 14:00:41 TRACE MapConfiguration:89 - SE.IPR.HIAT.FE.ZS
+2018-12-15 14:00:41 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","","","","","","","","","","","","","","50","10","20")
+2018-12-15 14:00:41 TRACE ChangeMagnitudeMapper:66 - MapConfiguration [indicatorCodes=[SE.IPR.HIAT.FE.ZS, SE.NED.HIAT.FE.ZS, SE.SEC.HIAT.LO.FE.ZS, SE.TER.HIAT.BA.FE.ZS, SE.PRM.HIAT.FE.ZS, SE.TER.HIAT.ST.FE.ZS, SE.SEC.HIAT.PO.FE.ZS, SE.SEC.HIAT.UP.FE.ZS, SE.TER.HIAT.MS.FE.ZS, SE.TER.HIAT.DO.FE.ZS], countryCodes=[USA], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.HIAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=USA}, yearValues={1999=40.0, 2014=50.0, 2015=10.0, 2016=20.0}], eariliestYear = 2000, context<not shown>
+2018-12-15 14:00:41 TRACE ChangeMagnitudeMapper:74 - year =1999
+2018-12-15 14:00:41 TRACE ChangeMagnitudeMapper:74 - year =2014
+2018-12-15 14:00:41 TRACE ChangeMagnitudeMapper:74 - year =2015
+2018-12-15 14:00:41 TRACE ChangeMagnitudeMapper:74 - year =2016
+2018-12-15 14:00:41 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2009, 0.6666666666666666) at position 9.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2008, 0.6666666666666666) at position 8.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2007, 0.6666666666666666) at position 7.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2006, 0.6666666666666666) at position 6.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2005, 0.6666666666666666) at position 5.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2004, 0.6666666666666666) at position 4.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2003, 0.6666666666666666) at position 3.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2014, 0.6666666666666666) at position 14.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2002, 0.6666666666666666) at position 2.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2013, 0.6666666666666666) at position 13.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2001, 0.6666666666666666) at position 1.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2012, 0.6666666666666666) at position 12.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2000, 0.6666666666666666) at position 0.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2011, 0.6666666666666666) at position 11.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2010, 0.6666666666666666) at position 10.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2016, 10.0) at position 16.
+2018-12-15 14:00:41 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2015, -40.0) at position 15.
+2018-12-15 14:01:56 TRACE MapConfiguration:89 - SE.PRM.HIAT.FE.ZS
+2018-12-15 14:01:56 TRACE MapConfiguration:89 - SE.SEC.HIAT.LO.FE.ZS
+2018-12-15 14:01:56 TRACE MapConfiguration:89 - SE.SEC.HIAT.PO.FE.ZS
+2018-12-15 14:01:56 TRACE MapConfiguration:89 - SE.SEC.HIAT.UP.FE.ZS
+2018-12-15 14:01:56 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 14:01:56 TRACE MapConfiguration:89 - SE.TER.HIAT.BA.FE.ZS
+2018-12-15 14:01:56 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 14:01:56 TRACE MapConfiguration:89 - SE.TER.HIAT.MS.FE.ZS
+2018-12-15 14:01:56 TRACE MapConfiguration:89 - SE.TER.HIAT.ST.FE.ZS
+2018-12-15 14:01:56 TRACE MapConfiguration:89 - SE.NED.HIAT.FE.ZS
+2018-12-15 14:01:56 TRACE MapConfiguration:89 - SE.IPR.HIAT.FE.ZS
+2018-12-15 14:01:56 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","50","10","20")
+2018-12-15 14:01:56 TRACE ChangeMagnitudeMapper:66 - MapConfiguration [indicatorCodes=[SE.IPR.HIAT.FE.ZS, SE.NED.HIAT.FE.ZS, SE.SEC.HIAT.LO.FE.ZS, SE.TER.HIAT.BA.FE.ZS, SE.PRM.HIAT.FE.ZS, SE.TER.HIAT.ST.FE.ZS, SE.SEC.HIAT.PO.FE.ZS, SE.SEC.HIAT.UP.FE.ZS, SE.TER.HIAT.MS.FE.ZS, SE.TER.HIAT.DO.FE.ZS], countryCodes=[USA], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.HIAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=USA}, yearValues={2012=40.0, 2014=50.0, 2015=10.0, 2016=20.0}], eariliestYear = 2000, context<not shown>
+2018-12-15 14:01:56 TRACE ChangeMagnitudeMapper:74 - year =2012
+2018-12-15 14:01:56 TRACE ChangeMagnitudeMapper:74 - year =2014
+2018-12-15 14:01:57 TRACE ChangeMagnitudeMapper:74 - year =2015
+2018-12-15 14:01:57 TRACE ChangeMagnitudeMapper:74 - year =2016
+2018-12-15 14:01:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 0.
+2018-12-15 14:01:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 1.
+2018-12-15 14:01:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 2.
+2018-12-15 14:01:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 3.
+2018-12-15 14:01:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 2.0) at position 4.
+2018-12-15 14:01:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 5.
+2018-12-15 14:01:57 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 6.
+2018-12-15 14:01:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2014, 5.0) at position 1.
+2018-12-15 14:01:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2013, 5.0) at position 0.
+2018-12-15 14:01:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2016, 10.0) at position 3.
+2018-12-15 14:01:57 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2015, -40.0) at position 2.
+2018-12-15 14:03:11 TRACE MapConfiguration:89 - SE.PRM.HIAT.FE.ZS
+2018-12-15 14:03:11 TRACE MapConfiguration:89 - SE.SEC.HIAT.LO.FE.ZS
+2018-12-15 14:03:11 TRACE MapConfiguration:89 - SE.SEC.HIAT.PO.FE.ZS
+2018-12-15 14:03:11 TRACE MapConfiguration:89 - SE.SEC.HIAT.UP.FE.ZS
+2018-12-15 14:03:11 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 14:03:11 TRACE MapConfiguration:89 - SE.TER.HIAT.BA.FE.ZS
+2018-12-15 14:03:11 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 14:03:11 TRACE MapConfiguration:89 - SE.TER.HIAT.MS.FE.ZS
+2018-12-15 14:03:11 TRACE MapConfiguration:89 - SE.TER.HIAT.ST.FE.ZS
+2018-12-15 14:03:11 TRACE MapConfiguration:89 - SE.NED.HIAT.FE.ZS
+2018-12-15 14:03:11 TRACE MapConfiguration:89 - SE.IPR.HIAT.FE.ZS
+2018-12-15 14:03:11 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","50","10","20")
+2018-12-15 14:03:11 TRACE ChangeMagnitudeMapper:66 - MapConfiguration [indicatorCodes=[SE.IPR.HIAT.FE.ZS, SE.NED.HIAT.FE.ZS, SE.SEC.HIAT.LO.FE.ZS, SE.TER.HIAT.BA.FE.ZS, SE.PRM.HIAT.FE.ZS, SE.TER.HIAT.ST.FE.ZS, SE.SEC.HIAT.PO.FE.ZS, SE.SEC.HIAT.UP.FE.ZS, SE.TER.HIAT.MS.FE.ZS, SE.TER.HIAT.DO.FE.ZS], countryCodes=[USA], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.HIAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=USA}, yearValues={2012=40.0, 2014=50.0, 2015=10.0, 2016=20.0}], eariliestYear = 2000, context<not shown>
+2018-12-15 14:03:11 TRACE ChangeMagnitudeMapper:74 - year =2012
+2018-12-15 14:03:11 TRACE ChangeMagnitudeMapper:74 - year =2014
+2018-12-15 14:03:11 TRACE ChangeMagnitudeMapper:74 - year =2015
+2018-12-15 14:03:11 TRACE ChangeMagnitudeMapper:74 - year =2016
+2018-12-15 14:03:11 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 5.0) at position 0.
+2018-12-15 14:03:11 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 5.0) at position 1.
+2018-12-15 14:03:11 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at position 2.
+2018-12-15 14:03:11 ERROR TestDriver:352 - Missing expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at position 3.
+2018-12-15 14:03:11 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2014, 5.0) at position 1.
+2018-12-15 14:03:11 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2013, 5.0) at position 0.
+2018-12-15 14:03:11 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2016, 10.0) at position 3.
+2018-12-15 14:03:11 ERROR TestDriver:352 - Received unexpected output (Arab World, Female-Education-Secondary-Upper2015, -40.0) at position 2.
+2018-12-15 14:04:06 TRACE MapConfiguration:89 - SE.PRM.HIAT.FE.ZS
+2018-12-15 14:04:06 TRACE MapConfiguration:89 - SE.SEC.HIAT.LO.FE.ZS
+2018-12-15 14:04:06 TRACE MapConfiguration:89 - SE.SEC.HIAT.PO.FE.ZS
+2018-12-15 14:04:06 TRACE MapConfiguration:89 - SE.SEC.HIAT.UP.FE.ZS
+2018-12-15 14:04:06 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 14:04:06 TRACE MapConfiguration:89 - SE.TER.HIAT.BA.FE.ZS
+2018-12-15 14:04:06 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 14:04:06 TRACE MapConfiguration:89 - SE.TER.HIAT.MS.FE.ZS
+2018-12-15 14:04:06 TRACE MapConfiguration:89 - SE.TER.HIAT.ST.FE.ZS
+2018-12-15 14:04:06 TRACE MapConfiguration:89 - SE.NED.HIAT.FE.ZS
+2018-12-15 14:04:06 TRACE MapConfiguration:89 - SE.IPR.HIAT.FE.ZS
+2018-12-15 14:04:06 DEBUG MapDriverBase:148 - Mapping input (1, "Arab World","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","50","10","20")
+2018-12-15 14:04:06 TRACE ChangeMagnitudeMapper:66 - MapConfiguration [indicatorCodes=[SE.IPR.HIAT.FE.ZS, SE.NED.HIAT.FE.ZS, SE.SEC.HIAT.LO.FE.ZS, SE.TER.HIAT.BA.FE.ZS, SE.PRM.HIAT.FE.ZS, SE.TER.HIAT.ST.FE.ZS, SE.SEC.HIAT.PO.FE.ZS, SE.SEC.HIAT.UP.FE.ZS, SE.TER.HIAT.MS.FE.ZS, SE.TER.HIAT.DO.FE.ZS], countryCodes=[USA], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.HIAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=USA}, yearValues={2012=40.0, 2014=50.0, 2015=10.0, 2016=20.0}], eariliestYear = 2000, context<not shown>
+2018-12-15 14:04:06 TRACE ChangeMagnitudeMapper:74 - year =2012
+2018-12-15 14:04:06 TRACE ChangeMagnitudeMapper:74 - year =2014
+2018-12-15 14:04:06 TRACE ChangeMagnitudeMapper:74 - year =2015
+2018-12-15 14:04:06 TRACE ChangeMagnitudeMapper:74 - year =2016
+2018-12-15 14:04:06 DEBUG TestDriver:225 - Matched expected output (Arab World, Female-Education-Secondary-Upper, 5.0) at positions [0, 1]
+2018-12-15 14:04:06 DEBUG TestDriver:225 - Matched expected output (Arab World, Female-Education-Secondary-Upper, -40.0) at positions [2]
+2018-12-15 14:04:06 DEBUG TestDriver:225 - Matched expected output (Arab World, Female-Education-Secondary-Upper, 10.0) at positions [3]
+2018-12-15 14:06:48 TRACE MapConfiguration:89 - SE.PRM.HIAT.FE.ZS
+2018-12-15 14:06:48 TRACE MapConfiguration:89 - SE.SEC.HIAT.LO.FE.ZS
+2018-12-15 14:06:48 TRACE MapConfiguration:89 - SE.SEC.HIAT.PO.FE.ZS
+2018-12-15 14:06:48 TRACE MapConfiguration:89 - SE.SEC.HIAT.UP.FE.ZS
+2018-12-15 14:06:48 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 14:06:48 TRACE MapConfiguration:89 - SE.TER.HIAT.BA.FE.ZS
+2018-12-15 14:06:48 TRACE MapConfiguration:89 - SE.TER.HIAT.DO.FE.ZS
+2018-12-15 14:06:48 TRACE MapConfiguration:89 - SE.TER.HIAT.MS.FE.ZS
+2018-12-15 14:06:48 TRACE MapConfiguration:89 - SE.TER.HIAT.ST.FE.ZS
+2018-12-15 14:06:48 TRACE MapConfiguration:89 - SE.NED.HIAT.FE.ZS
+2018-12-15 14:06:48 TRACE MapConfiguration:89 - SE.IPR.HIAT.FE.ZS
+2018-12-15 14:06:48 DEBUG MapDriverBase:148 - Mapping input (1, "United States","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","50","10","20")
+2018-12-15 14:06:49 TRACE ChangeMagnitudeMapper:63 - MapConfiguration [indicatorCodes=[SE.IPR.HIAT.FE.ZS, SE.NED.HIAT.FE.ZS, SE.SEC.HIAT.LO.FE.ZS, SE.TER.HIAT.BA.FE.ZS, SE.PRM.HIAT.FE.ZS, SE.TER.HIAT.ST.FE.ZS, SE.SEC.HIAT.PO.FE.ZS, SE.SEC.HIAT.UP.FE.ZS, SE.TER.HIAT.MS.FE.ZS, SE.TER.HIAT.DO.FE.ZS], countryCodes=[USA], heads={COUNTRY_NAME=United States, INDICATOR_CODE=SE.SEC.HIAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=USA}, yearValues={2012=40.0, 2014=50.0, 2015=10.0, 2016=20.0}], eariliestYear = 2000, context<not shown>
+2018-12-15 14:06:49 DEBUG TestDriver:225 - Matched expected output (United States, Female-Education-Secondary-Upper, 5.0) at positions [0, 1]
+2018-12-15 14:06:49 DEBUG TestDriver:225 - Matched expected output (United States, Female-Education-Secondary-Upper, -40.0) at positions [2]
+2018-12-15 14:06:49 DEBUG TestDriver:225 - Matched expected output (United States, Female-Education-Secondary-Upper, 10.0) at positions [3]
+2018-12-15 14:07:16 DEBUG MapDriverBase:148 - Mapping input (1, "United States","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","50","10","20")
+2018-12-15 14:07:16 TRACE ChangeMagnitudeMapper:63 - MapConfiguration [indicatorCodes=[SE.IPR.HIAT.FE.ZS, SE.NED.HIAT.FE.ZS, SE.SEC.HIAT.LO.FE.ZS, SE.TER.HIAT.BA.FE.ZS, SE.PRM.HIAT.FE.ZS, SE.TER.HIAT.ST.FE.ZS, SE.SEC.HIAT.PO.FE.ZS, SE.SEC.HIAT.UP.FE.ZS, SE.TER.HIAT.MS.FE.ZS, SE.TER.HIAT.DO.FE.ZS], countryCodes=[USA], heads={COUNTRY_NAME=United States, INDICATOR_CODE=SE.SEC.HIAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=USA}, yearValues={2012=40.0, 2014=50.0, 2015=10.0, 2016=20.0}], eariliestYear = 2000, context<not shown>
+2018-12-15 14:07:16 DEBUG TestDriver:225 - Matched expected output (United States, Female-Education-Secondary-Upper, 5.0) at positions [0, 1]
+2018-12-15 14:07:16 DEBUG TestDriver:225 - Matched expected output (United States, Female-Education-Secondary-Upper, -40.0) at positions [2]
+2018-12-15 14:07:16 DEBUG TestDriver:225 - Matched expected output (United States, Female-Education-Secondary-Upper, 10.0) at positions [3]
+2018-12-15 14:09:08 TRACE ChangeMagnitudeMapper:22 - Loading default configuration
+2018-12-15 14:09:08 DEBUG MapDriverBase:148 - Mapping input (1, "United States","USA","Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)","SE.SEC.HIAT.UP.FE.ZS","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","40","","50","10","20")
+2018-12-15 14:09:08 DEBUG TestDriver:225 - Matched expected output (United States, Female-Education-Secondary-Upper, 5.0) at positions [0, 1]
+2018-12-15 14:09:08 DEBUG TestDriver:225 - Matched expected output (United States, Female-Education-Secondary-Upper, -40.0) at positions [2]
+2018-12-15 14:09:08 DEBUG TestDriver:225 - Matched expected output (United States, Female-Education-Secondary-Upper, 10.0) at positions [3]

@@ -52,11 +52,11 @@ public class CountryFemGradDoubleMapper extends Mapper<LongWritable, Text, Text,
 		List<Double> values = new ArrayList<>();
 		
 		for(String year: config.getYears()){
-			try {
-				doubleValue = Double.parseDouble(schema.getValueFromColumnName(year));
-			}catch(NumberFormatException e) {
-				continue;
-			}
+		
+			doubleValue = Double.parseDouble(schema.getValueFromColumnName(year));
+		
+			
+			
 			values.add(doubleValue);
 			if(!isBelow && !config.isInRangeExclusiveMax(doubleValue)){
 				isBelow = true;
