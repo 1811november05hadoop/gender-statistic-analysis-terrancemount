@@ -1,0 +1,152 @@
+Afghanistan	1975:1.10%
+Algeria	2008:22.75%
+Bangladesh	2001:13.36%
+Barbados	2000:25.40%
+Benin	1979:0.50%
+Bhutan	2012:2.93%
+Botswana	1971:0.77%
+British Virgin Islands	1991:21.27%
+Burkina Faso	2014:1.57%
+Burundi	2014:2.28%
+Cabo Verde	2015:19.81%
+Cambodia	2009:3.32%
+Cameroon	2010:11.48%
+Central African Republic	1975:0.44%
+Chad	2004:1.66%
+China	2010:19.20%
+Congo, Dem. Rep.	2013:10.26%
+Congo, Rep.	1984:4.08%
+Cote d'Ivoire	2014:6.94%
+Dominica	2001:10.36%
+El Salvador	2013:25.49%
+Ethiopia	2011:5.66%
+Gambia, The	1973:0.65%
+Ghana	2010:14.68%
+Guatemala	2014:27.39%
+Haiti	1971:1.54%
+Honduras	2014:24.36%
+India	2011:19.43%
+Indonesia	2015:28.53%
+Iraq	2013:23.95%
+Kenya	2010:18.00%
+Lesotho	2008:14.19%
+Liberia	1974:2.61%
+Malawi	1998:2.39%
+Maldives	2006:4.07%
+Mali	2015:3.48%
+Mozambique	2011:3.04%
+Myanmar	1973:1.10%
+Namibia	2001:16.30%
+Pakistan	2014:20.97%
+Rwanda	2012:6.43%
+Sao Tome and Principe	1981:0.85%
+Senegal	2013:5.19%
+South Sudan	2008:10.85%
+Suriname	2012:26.25%
+Swaziland	1986:12.74%
+Syrian Arab Republic	2009:18.88%
+Tanzania	2012:2.29%
+Thailand	2013:28.17%
+Togo	2011:3.04%
+Tunisia	1980:3.20%
+Uganda	2012:6.35%
+Vanuatu	1979:5.20%
+Vietnam	2009:21.44%
+Zambia	1990:8.87%
+Zimbabwe	2014:12.00%
+~American Samoa	NO RECORDS
+~Angola	NO RECORDS
+~Antigua and Barbuda	NO RECORDS
+~Arab World	NO RECORDS
+~Brunei Darussalam	NO RECORDS
+~Caribbean small states	NO RECORDS
+~Central Europe and the Baltics	NO RECORDS
+~Channel Islands	NO RECORDS
+~Comoros	NO RECORDS
+~Curacao	NO RECORDS
+~Djibouti	NO RECORDS
+~Early-demographic dividend	NO RECORDS
+~East Asia & Pacific	NO RECORDS
+~East Asia & Pacific (IDA & IBRD)	NO RECORDS
+~East Asia & Pacific (excluding high income)	NO RECORDS
+~Equatorial Guinea	NO RECORDS
+~Eritrea	NO RECORDS
+~Euro area	NO RECORDS
+~Europe & Central Asia	NO RECORDS
+~Europe & Central Asia (IDA & IBRD)	NO RECORDS
+~Europe & Central Asia (excluding high income)	NO RECORDS
+~European Union	NO RECORDS
+~Faroe Islands	NO RECORDS
+~Fragile and conflict affected situations	NO RECORDS
+~Gabon	NO RECORDS
+~Gibraltar	NO RECORDS
+~Grenada	NO RECORDS
+~Guinea	NO RECORDS
+~Guinea-Bissau	NO RECORDS
+~Heavily indebted poor countries (HIPC)	NO RECORDS
+~High income	NO RECORDS
+~IBRD only	NO RECORDS
+~IDA & IBRD total	NO RECORDS
+~IDA blend	NO RECORDS
+~IDA only	NO RECORDS
+~IDA total	NO RECORDS
+~Isle of Man	NO RECORDS
+~Jamaica	NO RECORDS
+~Kiribati	NO RECORDS
+~Korea, Dem. People's Rep.	NO RECORDS
+~Kosovo	NO RECORDS
+~Lao PDR	NO RECORDS
+~Late-demographic dividend	NO RECORDS
+~Latin America & Caribbean	NO RECORDS
+~Latin America & Caribbean (IDA & IBRD)	NO RECORDS
+~Latin America & Caribbean (excluding high income)	NO RECORDS
+~Least developed countries: UN classification	NO RECORDS
+~Libya	NO RECORDS
+~Low & middle income	NO RECORDS
+~Low income	NO RECORDS
+~Lower middle income	NO RECORDS
+~Macedonia, FYR	NO RECORDS
+~Madagascar	NO RECORDS
+~Mauritania	NO RECORDS
+~Micronesia, Fed. Sts.	NO RECORDS
+~Middle East & North Africa	NO RECORDS
+~Middle East & North Africa (IDA & IBRD)	NO RECORDS
+~Middle East & North Africa (excluding high income)	NO RECORDS
+~Middle income	NO RECORDS
+~Monaco	NO RECORDS
+~Morocco	NO RECORDS
+~Nauru	NO RECORDS
+~New Caledonia	NO RECORDS
+~Nicaragua	NO RECORDS
+~Niger	NO RECORDS
+~Nigeria	NO RECORDS
+~North America	NO RECORDS
+~Northern Mariana Islands	NO RECORDS
+~OECD members	NO RECORDS
+~Other small states	NO RECORDS
+~Pacific island small states	NO RECORDS
+~Papua New Guinea	NO RECORDS
+~Post-demographic dividend	NO RECORDS
+~Pre-demographic dividend	NO RECORDS
+~San Marino	NO RECORDS
+~Sierra Leone	NO RECORDS
+~Sint Maarten (Dutch part)	NO RECORDS
+~Small states	NO RECORDS
+~Solomon Islands	NO RECORDS
+~Somalia	NO RECORDS
+~South Asia	NO RECORDS
+~South Asia (IDA & IBRD)	NO RECORDS
+~St. Kitts and Nevis	NO RECORDS
+~St. Martin (French part)	NO RECORDS
+~St. Vincent and the Grenadines	NO RECORDS
+~Sub-Saharan Africa	NO RECORDS
+~Sub-Saharan Africa (IDA & IBRD)	NO RECORDS
+~Sub-Saharan Africa (excluding high income)	NO RECORDS
+~Sudan	NO RECORDS
+~Timor-Leste	NO RECORDS
+~Turks and Caicos Islands	NO RECORDS
+~Tuvalu	NO RECORDS
+~Upper middle income	NO RECORDS
+~Virgin Islands (U.S.)	NO RECORDS
+~World	NO RECORDS
+~Yemen, Rep.	NO RECORDS

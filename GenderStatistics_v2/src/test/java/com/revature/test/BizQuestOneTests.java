@@ -52,7 +52,6 @@ public class BizQuestOneTests {
 				+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
 				+ "\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\","
 				+ "\"50\",\"16\",\"20\""));
-		mapDriver.withOutput(new Text("Arab World"), new Text("2015:16.00%"));
 		mapDriver.withOutput(new Text("Arab World"), new Text("2016:20.00%"));
 
 		mapDriver.runTest();
@@ -112,7 +111,7 @@ public class BizQuestOneTests {
 	
 		
 		mapReduceDriver.withOutput(new Text("Arab World"), 
-				new Text("2016:20.00%, 2015:16.00%"));
+				new Text("2016:20.00%"));
 		
 
 		mapReduceDriver.runTest();

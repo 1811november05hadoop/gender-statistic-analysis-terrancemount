@@ -1,0 +1,32 @@
+Adolescent fertility rate (births per 1,000 women ages 15-19)	-25.77
+Children out of school, primary, female	32.46
+Contributing family workers, female (% of female employment)	-42.86
+Educational attainment, at least completed post-secondary, population 25+, female (%) (cumulative)	-20.60
+Educational attainment, completed Bachelor's or equivalent, population 25+ years, female (%)	-20.60
+Educational attainment, no schooling, population 25+ years, female (%)	-19.83
+Educational attainment, some primary, population 25+ years, female (%)	-88.44
+Educational attainment, some primary, population 25+ years, total (%)	-87.18
+Employment in agriculture, female (% of female employment)	-44.37
+Employment in industry, female (% of female employment)	-22.03
+GDP (current US$)	67.95
+GDP per capita (Current US$)	50.92
+GNI per capita, Atlas method (current US$)	57.41
+GNI per capita, PPP (current international $)	54.52
+GNI, Atlas method (current US$)	75.15
+Labor force, female	13.17
+Labor force, total	11.92
+Number of maternal deaths	14.89
+Own-account workers, female (% of females employed)	-12.95
+Population ages 15-64, female	13.54
+Population ages 15-64, total	13.80
+Population, female	10.70
+Population, total	11.28
+Prevalence of obesity, female (% of female population ages 18+)	28.02
+Prevalence of overweight, female (% of female adults)	13.78
+Secondary education, teachers (% female)	12.55
+Self-employed, female (% of female employment)	-13.98
+Tertiary education, academic staff (% female)	12.16
+Unemployment with advanced education, female (% of female labor force with advanced education)	-16.27
+Unemployment, female (% of female labor force) (modeled ILO estimate)	-10.29
+Unemployment, female (% of female labor force) (national estimate)	-10.30
+Vulnerable employment, female (% of female employment)	-13.84

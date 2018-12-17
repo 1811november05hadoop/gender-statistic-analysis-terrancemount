@@ -17617,3 +17617,3129 @@ Log session start time Sun Dec 16 19:28:37 PST 2018<br>
 <td>TestDriver.java:225</td>
 <td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2000:0.0) at positions [0]</td>
 </tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 17 07:11:16 PST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>192</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>341</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestOne.BizReducer@646d64ab</td>
+</tr>
+
+<tr>
+<td>345</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (Arab World, (2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>367</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@7e2d773b, context)</td>
+</tr>
+
+<tr>
+<td>369</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:352</td>
+<td title="Message">Missing expected output (Arab World, 2016:20.00%, 2015:16.00%) at position 0.</td>
+</tr>
+
+<tr>
+<td>370</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:352</td>
+<td title="Message">Received unexpected output (Arab World, 2016:20.00%) at position 0.</td>
+</tr>
+
+<tr>
+<td>380</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Iceland, (NO RECORDS))</td>
+</tr>
+
+<tr>
+<td>383</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@27808f31, context)</td>
+</tr>
+
+<tr>
+<td>402</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Iceland, NO RECORDS) at positions [0]</td>
+</tr>
+
+<tr>
+<td>404</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Arab World, (2015:16.00%, 2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>407</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@58c1670b, context)</td>
+</tr>
+
+<tr>
+<td>423</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>424</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>430</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>459</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:352</td>
+<td title="Message">Missing expected output (Arab World, 2015:16.00%) at position 0.</td>
+</tr>
+
+<tr>
+<td>461</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:352</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) but at incorrect position 0 (expected position 1)</td>
+</tr>
+
+<tr>
+<td>465</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizMapper category">com.revature.BizQuestThree.BizMapper</td>
+<td>BizMapper.java:22</td>
+<td title="Message">Loading default configuration</td>
+</tr>
+
+<tr>
+<td>466</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Employment to population ratio, 15+, male (%) (national estimate)&quot;,&quot;SL.EMP.TOTL.SP.MA.NE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>486</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestThree.BizReducer@13c27452</td>
+</tr>
+
+<tr>
+<td>488</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (United States	Employment to population ratio, 15+, male (%) (national estimate), (2000:0.0, 2001:0.0, 2002:0.0, 2003:0.0, 2004:0.0, 2005:0.0, 2006:0.0, 2007:0.0, 2008:0.0, 2009:0.0, 2010:0.0, 2011:0.0, 2012:0.0, 2013:12.5, 2014:10.0, 2015:-80.0, 2016:100.0))</td>
+</tr>
+
+<tr>
+<td>491</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizReducer category">com.revature.BizQuestThree.BizReducer</td>
+<td>BizReducer.java:34</td>
+<td title="Message">reducing(United States	Employment to population ratio, 15+, male (%) (national estimate))</td>
+</tr>
+
+<tr>
+<td>496</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 4	40.83	80.00	-80.00	100.00	10.63	11.25	73.50	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	12.50	10.00	-80.00	100.00) at positions [1]</td>
+</tr>
+
+<tr>
+<td>497</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-%-changes	avg-%-increase	avg-%-decrease	min%	max%	mean%	median%	std-dev%	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>498</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (2014:1.0, 2015:2.0, 2016:-1.0, 2017:3.0))</td>
+</tr>
+
+<tr>
+<td>509</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizReducer category">com.revature.BizQuestThree.BizReducer</td>
+<td>BizReducer.java:34</td>
+<td title="Message">reducing(United States	Female-Education-Secondary-Upper)</td>
+</tr>
+
+<tr>
+<td>511</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-%-changes	avg-%-increase	avg-%-decrease	min%	max%	mean%	median%	std-dev%	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>512</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 4	2.00	1.00	-1.00	3.00	1.25	1.50	1.71	1.00	2.00	-1.00	3.00) at positions [1]</td>
+</tr>
+
+<tr>
+<td>513</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Employment to population ratio, 15+, male (%) (national estimate)&quot;,&quot;SL.EMP.TOTL.SP.MA.NE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>530</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2016:100.0) at positions [16]</td>
+</tr>
+
+<tr>
+<td>530</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2003:0.0) at positions [3]</td>
+</tr>
+
+<tr>
+<td>531</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2011:0.0) at positions [11]</td>
+</tr>
+
+<tr>
+<td>531</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2004:0.0) at positions [4]</td>
+</tr>
+
+<tr>
+<td>532</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2010:0.0) at positions [10]</td>
+</tr>
+
+<tr>
+<td>532</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2005:0.0) at positions [5]</td>
+</tr>
+
+<tr>
+<td>532</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2008:0.0) at positions [8]</td>
+</tr>
+
+<tr>
+<td>533</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2014:10.0) at positions [14]</td>
+</tr>
+
+<tr>
+<td>533</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2015:-80.0) at positions [15]</td>
+</tr>
+
+<tr>
+<td>534</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2009:0.0) at positions [9]</td>
+</tr>
+
+<tr>
+<td>534</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2013:12.5) at positions [13]</td>
+</tr>
+
+<tr>
+<td>534</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2001:0.0) at positions [1]</td>
+</tr>
+
+<tr>
+<td>535</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2006:0.0) at positions [6]</td>
+</tr>
+
+<tr>
+<td>535</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2007:0.0) at positions [7]</td>
+</tr>
+
+<tr>
+<td>535</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2002:0.0) at positions [2]</td>
+</tr>
+
+<tr>
+<td>536</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2012:0.0) at positions [12]</td>
+</tr>
+
+<tr>
+<td>536</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2000:0.0) at positions [0]</td>
+</tr>
+
+<tr>
+<td>537</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizMapper category">com.revature.BizQuestTwo.BizMapper</td>
+<td>BizMapper.java:21</td>
+<td title="Message">Loading default configuration</td>
+</tr>
+
+<tr>
+<td>538</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.HIAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>555</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestTwo.BizReducer@69b0fd6f</td>
+</tr>
+
+<tr>
+<td>556</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (5.0, 5.0, -40.0, 10.0))</td>
+</tr>
+
+<tr>
+<td>558</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizReducer category">com.revature.BizQuestTwo.BizReducer</td>
+<td>BizReducer.java:36</td>
+<td title="Message">[5.0, 5.0, -40.0, 10.0]</td>
+</tr>
+
+<tr>
+<td>560</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 4	6.67	40.00	-40.00	10.00	-5.00	5.00	23.45) at positions [1]</td>
+</tr>
+
+<tr>
+<td>560</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-changes	avg-increase	avg-decrease	min	max	mean	median	std-dev, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>561</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (1.0, 2.0, 3.0, 4.0, -1.0))</td>
+</tr>
+
+<tr>
+<td>572</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizReducer category">com.revature.BizQuestTwo.BizReducer</td>
+<td>BizReducer.java:36</td>
+<td title="Message">[1.0, 2.0, 3.0, 4.0, -1.0]</td>
+</tr>
+
+<tr>
+<td>573</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 5	2.50	1.00	-1.00	4.00	1.80	2.00	1.92) at positions [1]</td>
+</tr>
+
+<tr>
+<td>574</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-changes	avg-increase	avg-decrease	min	max	mean	median	std-dev, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>575</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.HIAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>588</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 5.0) at positions [0, 1]</td>
+</tr>
+
+<tr>
+<td>588</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, -40.0) at positions [2]</td>
+</tr>
+
+<tr>
+<td>588</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 10.0) at positions [3]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 17 07:11:49 PST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>159</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>265</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestOne.BizReducer@1f57539</td>
+</tr>
+
+<tr>
+<td>269</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (Arab World, (2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>290</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@6f195bc3, context)</td>
+</tr>
+
+<tr>
+<td>292</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:352</td>
+<td title="Message">Missing expected output (Arab World, 2016:20.00%, 2015:16.00%) at position 0.</td>
+</tr>
+
+<tr>
+<td>293</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:352</td>
+<td title="Message">Received unexpected output (Arab World, 2016:20.00%) at position 0.</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 17 07:12:37 PST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>263</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestOne.BizReducer@1f57539</td>
+</tr>
+
+<tr>
+<td>267</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (Arab World, (2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>289</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@6f195bc3, context)</td>
+</tr>
+
+<tr>
+<td>292</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) at positions [0]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 17 07:12:59 PST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>167</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>277</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestOne.BizReducer@646d64ab</td>
+</tr>
+
+<tr>
+<td>280</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (Arab World, (2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>303</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@7e2d773b, context)</td>
+</tr>
+
+<tr>
+<td>305</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>307</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Iceland, (NO RECORDS))</td>
+</tr>
+
+<tr>
+<td>310</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@1a8a8f7c, context)</td>
+</tr>
+
+<tr>
+<td>329</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Iceland, NO RECORDS) at positions [0]</td>
+</tr>
+
+<tr>
+<td>330</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Arab World, (2015:16.00%, 2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>334</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@fad74ee, context)</td>
+</tr>
+
+<tr>
+<td>351</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>353</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>359</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>374</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:352</td>
+<td title="Message">Missing expected output (Arab World, 2015:16.00%) at position 0.</td>
+</tr>
+
+<tr>
+<td>375</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:352</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) but at incorrect position 0 (expected position 1)</td>
+</tr>
+
+<tr>
+<td>394</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizMapper category">com.revature.BizQuestThree.BizMapper</td>
+<td>BizMapper.java:22</td>
+<td title="Message">Loading default configuration</td>
+</tr>
+
+<tr>
+<td>395</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Employment to population ratio, 15+, male (%) (national estimate)&quot;,&quot;SL.EMP.TOTL.SP.MA.NE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>416</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestThree.BizReducer@12f41634</td>
+</tr>
+
+<tr>
+<td>417</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (United States	Employment to population ratio, 15+, male (%) (national estimate), (2000:0.0, 2001:0.0, 2002:0.0, 2003:0.0, 2004:0.0, 2005:0.0, 2006:0.0, 2007:0.0, 2008:0.0, 2009:0.0, 2010:0.0, 2011:0.0, 2012:0.0, 2013:12.5, 2014:10.0, 2015:-80.0, 2016:100.0))</td>
+</tr>
+
+<tr>
+<td>421</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizReducer category">com.revature.BizQuestThree.BizReducer</td>
+<td>BizReducer.java:34</td>
+<td title="Message">reducing(United States	Employment to population ratio, 15+, male (%) (national estimate))</td>
+</tr>
+
+<tr>
+<td>425</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 4	40.83	80.00	-80.00	100.00	10.63	11.25	73.50	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	12.50	10.00	-80.00	100.00) at positions [1]</td>
+</tr>
+
+<tr>
+<td>426</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-%-changes	avg-%-increase	avg-%-decrease	min%	max%	mean%	median%	std-dev%	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>427</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (2014:1.0, 2015:2.0, 2016:-1.0, 2017:3.0))</td>
+</tr>
+
+<tr>
+<td>444</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizReducer category">com.revature.BizQuestThree.BizReducer</td>
+<td>BizReducer.java:34</td>
+<td title="Message">reducing(United States	Female-Education-Secondary-Upper)</td>
+</tr>
+
+<tr>
+<td>446</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-%-changes	avg-%-increase	avg-%-decrease	min%	max%	mean%	median%	std-dev%	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>446</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 4	2.00	1.00	-1.00	3.00	1.25	1.50	1.71	1.00	2.00	-1.00	3.00) at positions [1]</td>
+</tr>
+
+<tr>
+<td>447</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Employment to population ratio, 15+, male (%) (national estimate)&quot;,&quot;SL.EMP.TOTL.SP.MA.NE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>464</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2016:100.0) at positions [16]</td>
+</tr>
+
+<tr>
+<td>465</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2003:0.0) at positions [3]</td>
+</tr>
+
+<tr>
+<td>465</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2011:0.0) at positions [11]</td>
+</tr>
+
+<tr>
+<td>466</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2004:0.0) at positions [4]</td>
+</tr>
+
+<tr>
+<td>466</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2010:0.0) at positions [10]</td>
+</tr>
+
+<tr>
+<td>466</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2005:0.0) at positions [5]</td>
+</tr>
+
+<tr>
+<td>467</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2008:0.0) at positions [8]</td>
+</tr>
+
+<tr>
+<td>467</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2014:10.0) at positions [14]</td>
+</tr>
+
+<tr>
+<td>467</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2015:-80.0) at positions [15]</td>
+</tr>
+
+<tr>
+<td>468</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2009:0.0) at positions [9]</td>
+</tr>
+
+<tr>
+<td>468</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2013:12.5) at positions [13]</td>
+</tr>
+
+<tr>
+<td>469</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2001:0.0) at positions [1]</td>
+</tr>
+
+<tr>
+<td>469</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2006:0.0) at positions [6]</td>
+</tr>
+
+<tr>
+<td>470</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2007:0.0) at positions [7]</td>
+</tr>
+
+<tr>
+<td>470</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2002:0.0) at positions [2]</td>
+</tr>
+
+<tr>
+<td>470</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2012:0.0) at positions [12]</td>
+</tr>
+
+<tr>
+<td>471</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2000:0.0) at positions [0]</td>
+</tr>
+
+<tr>
+<td>472</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizMapper category">com.revature.BizQuestTwo.BizMapper</td>
+<td>BizMapper.java:21</td>
+<td title="Message">Loading default configuration</td>
+</tr>
+
+<tr>
+<td>472</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.HIAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>485</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestTwo.BizReducer@462d5aee</td>
+</tr>
+
+<tr>
+<td>486</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (5.0, 5.0, -40.0, 10.0))</td>
+</tr>
+
+<tr>
+<td>489</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizReducer category">com.revature.BizQuestTwo.BizReducer</td>
+<td>BizReducer.java:36</td>
+<td title="Message">[5.0, 5.0, -40.0, 10.0]</td>
+</tr>
+
+<tr>
+<td>490</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 4	6.67	40.00	-40.00	10.00	-5.00	5.00	23.45) at positions [1]</td>
+</tr>
+
+<tr>
+<td>491</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-changes	avg-increase	avg-decrease	min	max	mean	median	std-dev, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>492</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (1.0, 2.0, 3.0, 4.0, -1.0))</td>
+</tr>
+
+<tr>
+<td>502</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizReducer category">com.revature.BizQuestTwo.BizReducer</td>
+<td>BizReducer.java:36</td>
+<td title="Message">[1.0, 2.0, 3.0, 4.0, -1.0]</td>
+</tr>
+
+<tr>
+<td>503</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 5	2.50	1.00	-1.00	4.00	1.80	2.00	1.92) at positions [1]</td>
+</tr>
+
+<tr>
+<td>503</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-changes	avg-increase	avg-decrease	min	max	mean	median	std-dev, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>504</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.HIAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>517</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 5.0) at positions [0, 1]</td>
+</tr>
+
+<tr>
+<td>518</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, -40.0) at positions [2]</td>
+</tr>
+
+<tr>
+<td>518</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 10.0) at positions [3]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 17 07:13:16 PST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>167</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>272</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestOne.BizReducer@2d8f65a4</td>
+</tr>
+
+<tr>
+<td>275</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (Arab World, (2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>296</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@467aecef, context)</td>
+</tr>
+
+<tr>
+<td>298</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>299</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Iceland, (NO RECORDS))</td>
+</tr>
+
+<tr>
+<td>303</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@6f195bc3, context)</td>
+</tr>
+
+<tr>
+<td>327</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Iceland, NO RECORDS) at positions [0]</td>
+</tr>
+
+<tr>
+<td>328</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Arab World, (2015:16.00%, 2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>332</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@3d921e20, context)</td>
+</tr>
+
+<tr>
+<td>347</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>349</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>354</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>370</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) at positions [0]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 17 07:13:58 PST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>174</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>297</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestOne.BizReducer@646d64ab</td>
+</tr>
+
+<tr>
+<td>301</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (Arab World, (2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>326</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@7e2d773b, context)</td>
+</tr>
+
+<tr>
+<td>329</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>333</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Iceland, (NO RECORDS))</td>
+</tr>
+
+<tr>
+<td>337</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@1a8a8f7c, context)</td>
+</tr>
+
+<tr>
+<td>358</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Iceland, NO RECORDS) at positions [0]</td>
+</tr>
+
+<tr>
+<td>359</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Arab World, (2015:16.00%, 2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>362</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@fad74ee, context)</td>
+</tr>
+
+<tr>
+<td>378</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>379</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>385</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>403</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>406</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizMapper category">com.revature.BizQuestThree.BizMapper</td>
+<td>BizMapper.java:22</td>
+<td title="Message">Loading default configuration</td>
+</tr>
+
+<tr>
+<td>410</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Employment to population ratio, 15+, male (%) (national estimate)&quot;,&quot;SL.EMP.TOTL.SP.MA.NE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>462</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestThree.BizReducer@5bfbf16f</td>
+</tr>
+
+<tr>
+<td>464</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (United States	Employment to population ratio, 15+, male (%) (national estimate), (2000:0.0, 2001:0.0, 2002:0.0, 2003:0.0, 2004:0.0, 2005:0.0, 2006:0.0, 2007:0.0, 2008:0.0, 2009:0.0, 2010:0.0, 2011:0.0, 2012:0.0, 2013:12.5, 2014:10.0, 2015:-80.0, 2016:100.0))</td>
+</tr>
+
+<tr>
+<td>468</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizReducer category">com.revature.BizQuestThree.BizReducer</td>
+<td>BizReducer.java:34</td>
+<td title="Message">reducing(United States	Employment to population ratio, 15+, male (%) (national estimate))</td>
+</tr>
+
+<tr>
+<td>478</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 4	40.83	80.00	-80.00	100.00	10.63	11.25	73.50	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	12.50	10.00	-80.00	100.00) at positions [1]</td>
+</tr>
+
+<tr>
+<td>479</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-%-changes	avg-%-increase	avg-%-decrease	min%	max%	mean%	median%	std-dev%	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>489</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (2014:1.0, 2015:2.0, 2016:-1.0, 2017:3.0))</td>
+</tr>
+
+<tr>
+<td>509</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizReducer category">com.revature.BizQuestThree.BizReducer</td>
+<td>BizReducer.java:34</td>
+<td title="Message">reducing(United States	Female-Education-Secondary-Upper)</td>
+</tr>
+
+<tr>
+<td>512</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-%-changes	avg-%-increase	avg-%-decrease	min%	max%	mean%	median%	std-dev%	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>513</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 4	2.00	1.00	-1.00	3.00	1.25	1.50	1.71	1.00	2.00	-1.00	3.00) at positions [1]</td>
+</tr>
+
+<tr>
+<td>517</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Employment to population ratio, 15+, male (%) (national estimate)&quot;,&quot;SL.EMP.TOTL.SP.MA.NE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>550</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2016:100.0) at positions [16]</td>
+</tr>
+
+<tr>
+<td>551</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2003:0.0) at positions [3]</td>
+</tr>
+
+<tr>
+<td>551</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2011:0.0) at positions [11]</td>
+</tr>
+
+<tr>
+<td>552</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2004:0.0) at positions [4]</td>
+</tr>
+
+<tr>
+<td>552</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2010:0.0) at positions [10]</td>
+</tr>
+
+<tr>
+<td>552</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2005:0.0) at positions [5]</td>
+</tr>
+
+<tr>
+<td>553</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2008:0.0) at positions [8]</td>
+</tr>
+
+<tr>
+<td>553</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2014:10.0) at positions [14]</td>
+</tr>
+
+<tr>
+<td>554</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2015:-80.0) at positions [15]</td>
+</tr>
+
+<tr>
+<td>554</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2009:0.0) at positions [9]</td>
+</tr>
+
+<tr>
+<td>554</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2013:12.5) at positions [13]</td>
+</tr>
+
+<tr>
+<td>555</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2001:0.0) at positions [1]</td>
+</tr>
+
+<tr>
+<td>555</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2006:0.0) at positions [6]</td>
+</tr>
+
+<tr>
+<td>555</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2007:0.0) at positions [7]</td>
+</tr>
+
+<tr>
+<td>556</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2002:0.0) at positions [2]</td>
+</tr>
+
+<tr>
+<td>556</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2012:0.0) at positions [12]</td>
+</tr>
+
+<tr>
+<td>556</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2000:0.0) at positions [0]</td>
+</tr>
+
+<tr>
+<td>557</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizMapper category">com.revature.BizQuestTwo.BizMapper</td>
+<td>BizMapper.java:21</td>
+<td title="Message">Loading default configuration</td>
+</tr>
+
+<tr>
+<td>558</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.HIAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>571</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestTwo.BizReducer@4eb7f003</td>
+</tr>
+
+<tr>
+<td>572</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (5.0, 5.0, -40.0, 10.0))</td>
+</tr>
+
+<tr>
+<td>575</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizReducer category">com.revature.BizQuestTwo.BizReducer</td>
+<td>BizReducer.java:36</td>
+<td title="Message">[5.0, 5.0, -40.0, 10.0]</td>
+</tr>
+
+<tr>
+<td>576</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 4	6.67	40.00	-40.00	10.00	-5.00	5.00	23.45) at positions [1]</td>
+</tr>
+
+<tr>
+<td>576</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-changes	avg-increase	avg-decrease	min	max	mean	median	std-dev, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>577</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (1.0, 2.0, 3.0, 4.0, -1.0))</td>
+</tr>
+
+<tr>
+<td>587</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizReducer category">com.revature.BizQuestTwo.BizReducer</td>
+<td>BizReducer.java:36</td>
+<td title="Message">[1.0, 2.0, 3.0, 4.0, -1.0]</td>
+</tr>
+
+<tr>
+<td>589</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 5	2.50	1.00	-1.00	4.00	1.80	2.00	1.92) at positions [1]</td>
+</tr>
+
+<tr>
+<td>589</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-changes	avg-increase	avg-decrease	min	max	mean	median	std-dev, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>590</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.HIAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>620</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 5.0) at positions [0, 1]</td>
+</tr>
+
+<tr>
+<td>621</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, -40.0) at positions [2]</td>
+</tr>
+
+<tr>
+<td>621</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 10.0) at positions [3]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 17 07:36:04 PST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>174</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>303</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestOne.BizReducer@646d64ab</td>
+</tr>
+
+<tr>
+<td>306</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (Arab World, (2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>334</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@7e2d773b, context)</td>
+</tr>
+
+<tr>
+<td>337</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>338</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Iceland, (NO RECORDS))</td>
+</tr>
+
+<tr>
+<td>341</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@1a8a8f7c, context)</td>
+</tr>
+
+<tr>
+<td>366</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Iceland, NO RECORDS) at positions [0]</td>
+</tr>
+
+<tr>
+<td>367</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Arab World, (2015:16.00%, 2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>370</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@fad74ee, context)</td>
+</tr>
+
+<tr>
+<td>383</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>384</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>390</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>411</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>413</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizMapper category">com.revature.BizQuestThree.BizMapper</td>
+<td>BizMapper.java:22</td>
+<td title="Message">Loading default configuration</td>
+</tr>
+
+<tr>
+<td>416</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Employment to population ratio, 15+, male (%) (national estimate)&quot;,&quot;SL.EMP.TOTL.SP.MA.NE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>502</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestThree.BizReducer@5bfbf16f</td>
+</tr>
+
+<tr>
+<td>513</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (United States	Employment to population ratio, 15+, male (%) (national estimate), (2000:0.0, 2001:0.0, 2002:0.0, 2003:0.0, 2004:0.0, 2005:0.0, 2006:0.0, 2007:0.0, 2008:0.0, 2009:0.0, 2010:0.0, 2011:0.0, 2012:0.0, 2013:12.5, 2014:10.0, 2015:-80.0, 2016:100.0))</td>
+</tr>
+
+<tr>
+<td>516</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizReducer category">com.revature.BizQuestThree.BizReducer</td>
+<td>BizReducer.java:34</td>
+<td title="Message">reducing(United States	Employment to population ratio, 15+, male (%) (national estimate))</td>
+</tr>
+
+<tr>
+<td>525</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 4	40.83	80.00	-80.00	100.00	10.63	11.25	73.50	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	12.50	10.00	-80.00	100.00) at positions [1]</td>
+</tr>
+
+<tr>
+<td>526</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-%-changes	avg-%-increase	avg-%-decrease	min%	max%	mean%	median%	std-dev%	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>533</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (2014:1.0, 2015:2.0, 2016:-1.0, 2017:3.0))</td>
+</tr>
+
+<tr>
+<td>548</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizReducer category">com.revature.BizQuestThree.BizReducer</td>
+<td>BizReducer.java:34</td>
+<td title="Message">reducing(United States	Female-Education-Secondary-Upper)</td>
+</tr>
+
+<tr>
+<td>550</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-%-changes	avg-%-increase	avg-%-decrease	min%	max%	mean%	median%	std-dev%	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>551</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 4	2.00	1.00	-1.00	3.00	1.25	1.50	1.71	1.00	2.00	-1.00	3.00) at positions [1]</td>
+</tr>
+
+<tr>
+<td>552</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Employment to population ratio, 15+, male (%) (national estimate)&quot;,&quot;SL.EMP.TOTL.SP.MA.NE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>585</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2016:100.0) at positions [16]</td>
+</tr>
+
+<tr>
+<td>586</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2003:0.0) at positions [3]</td>
+</tr>
+
+<tr>
+<td>586</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2011:0.0) at positions [11]</td>
+</tr>
+
+<tr>
+<td>587</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2004:0.0) at positions [4]</td>
+</tr>
+
+<tr>
+<td>588</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2010:0.0) at positions [10]</td>
+</tr>
+
+<tr>
+<td>593</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2005:0.0) at positions [5]</td>
+</tr>
+
+<tr>
+<td>594</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2008:0.0) at positions [8]</td>
+</tr>
+
+<tr>
+<td>595</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2014:10.0) at positions [14]</td>
+</tr>
+
+<tr>
+<td>597</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2015:-80.0) at positions [15]</td>
+</tr>
+
+<tr>
+<td>597</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2009:0.0) at positions [9]</td>
+</tr>
+
+<tr>
+<td>598</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2013:12.5) at positions [13]</td>
+</tr>
+
+<tr>
+<td>598</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2001:0.0) at positions [1]</td>
+</tr>
+
+<tr>
+<td>600</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2006:0.0) at positions [6]</td>
+</tr>
+
+<tr>
+<td>600</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2007:0.0) at positions [7]</td>
+</tr>
+
+<tr>
+<td>601</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2002:0.0) at positions [2]</td>
+</tr>
+
+<tr>
+<td>602</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2012:0.0) at positions [12]</td>
+</tr>
+
+<tr>
+<td>602</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2000:0.0) at positions [0]</td>
+</tr>
+
+<tr>
+<td>604</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizMapper category">com.revature.BizQuestTwo.BizMapper</td>
+<td>BizMapper.java:21</td>
+<td title="Message">Loading default configuration</td>
+</tr>
+
+<tr>
+<td>604</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.HIAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>626</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestTwo.BizReducer@4eb7f003</td>
+</tr>
+
+<tr>
+<td>627</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (5.0, 5.0, -40.0, 10.0))</td>
+</tr>
+
+<tr>
+<td>629</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizReducer category">com.revature.BizQuestTwo.BizReducer</td>
+<td>BizReducer.java:36</td>
+<td title="Message">[5.0, 5.0, -40.0, 10.0]</td>
+</tr>
+
+<tr>
+<td>630</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 4	6.67	40.00	-40.00	10.00	-5.00	5.00	23.45) at positions [1]</td>
+</tr>
+
+<tr>
+<td>630</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-changes	avg-increase	avg-decrease	min	max	mean	median	std-dev, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>631</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (1.0, 2.0, 3.0, 4.0, -1.0))</td>
+</tr>
+
+<tr>
+<td>640</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizReducer category">com.revature.BizQuestTwo.BizReducer</td>
+<td>BizReducer.java:36</td>
+<td title="Message">[1.0, 2.0, 3.0, 4.0, -1.0]</td>
+</tr>
+
+<tr>
+<td>642</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 5	2.50	1.00	-1.00	4.00	1.80	2.00	1.92) at positions [1]</td>
+</tr>
+
+<tr>
+<td>642</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-changes	avg-increase	avg-decrease	min	max	mean	median	std-dev, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>643</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.HIAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>654</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 5.0) at positions [0, 1]</td>
+</tr>
+
+<tr>
+<td>655</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, -40.0) at positions [2]</td>
+</tr>
+
+<tr>
+<td>655</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 10.0) at positions [3]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 17 07:47:41 PST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>362</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>542</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestOne.BizReducer@646d64ab</td>
+</tr>
+
+<tr>
+<td>545</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (Arab World, (2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>568</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@7e2d773b, context)</td>
+</tr>
+
+<tr>
+<td>571</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>573</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Iceland, (NO RECORDS))</td>
+</tr>
+
+<tr>
+<td>577</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Iceland, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@1a8a8f7c, context)</td>
+</tr>
+
+<tr>
+<td>613</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Iceland, NO RECORDS) at positions [0]</td>
+</tr>
+
+<tr>
+<td>614</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (Arab World, (2015:16.00%, 2016:20.00%))</td>
+</tr>
+
+<tr>
+<td>618</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizReducer category">com.revature.BizQuestOne.BizReducer</td>
+<td>BizReducer.java:17</td>
+<td title="Message">reduce(Arab World, org.apache.hadoop.mrunit.mapreduce.mock.MockReduceContextWrapper$4@fad74ee, context)</td>
+</tr>
+
+<tr>
+<td>635</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%, 2015:16.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>636</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;Arab World&quot;,&quot;ARB&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.CUAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;50&quot;,&quot;16&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>643</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestOne.BizMapper category">com.revature.BizQuestOne.BizMapper</td>
+<td>BizMapper.java:45</td>
+<td title="Message">MapConfiguration [indicatorCodes=[SE.SEC.CUAT.UP.FE.ZS], countryCodes=[], heads={COUNTRY_NAME=Arab World, INDICATOR_CODE=SE.SEC.CUAT.UP.FE.ZS, INDICATOR_NAME=Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative), COUNTRY_CODE=ARB}, yearValues={2014=50.0, 2015=16.0, 2016=20.0}], cutoff = 30.0, context&lt;not shown&gt;</td>
+</tr>
+
+<tr>
+<td>662</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (Arab World, 2016:20.00%) at positions [0]</td>
+</tr>
+
+<tr>
+<td>664</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizMapper category">com.revature.BizQuestThree.BizMapper</td>
+<td>BizMapper.java:22</td>
+<td title="Message">Loading default configuration</td>
+</tr>
+
+<tr>
+<td>666</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Employment to population ratio, 15+, male (%) (national estimate)&quot;,&quot;SL.EMP.TOTL.SP.MA.NE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>743</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestThree.BizReducer@5bfbf16f</td>
+</tr>
+
+<tr>
+<td>747</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (United States	Employment to population ratio, 15+, male (%) (national estimate), (2000:0.0, 2001:0.0, 2002:0.0, 2003:0.0, 2004:0.0, 2005:0.0, 2006:0.0, 2007:0.0, 2008:0.0, 2009:0.0, 2010:0.0, 2011:0.0, 2012:0.0, 2013:12.5, 2014:10.0, 2015:-80.0, 2016:100.0))</td>
+</tr>
+
+<tr>
+<td>751</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizReducer category">com.revature.BizQuestThree.BizReducer</td>
+<td>BizReducer.java:34</td>
+<td title="Message">reducing(United States	Employment to population ratio, 15+, male (%) (national estimate))</td>
+</tr>
+
+<tr>
+<td>760</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 4	40.83	80.00	-80.00	100.00	10.63	11.25	73.50	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	12.50	10.00	-80.00	100.00) at positions [1]</td>
+</tr>
+
+<tr>
+<td>762</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-%-changes	avg-%-increase	avg-%-decrease	min%	max%	mean%	median%	std-dev%	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>769</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (2014:1.0, 2015:2.0, 2016:-1.0, 2017:3.0))</td>
+</tr>
+
+<tr>
+<td>786</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestThree.BizReducer category">com.revature.BizQuestThree.BizReducer</td>
+<td>BizReducer.java:34</td>
+<td title="Message">reducing(United States	Female-Education-Secondary-Upper)</td>
+</tr>
+
+<tr>
+<td>788</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-%-changes	avg-%-increase	avg-%-decrease	min%	max%	mean%	median%	std-dev%	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>788</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 4	2.00	1.00	-1.00	3.00	1.25	1.50	1.71	1.00	2.00	-1.00	3.00) at positions [1]</td>
+</tr>
+
+<tr>
+<td>789</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Employment to population ratio, 15+, male (%) (national estimate)&quot;,&quot;SL.EMP.TOTL.SP.MA.NE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>810</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2016:100.0) at positions [16]</td>
+</tr>
+
+<tr>
+<td>811</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2003:0.0) at positions [3]</td>
+</tr>
+
+<tr>
+<td>811</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2011:0.0) at positions [11]</td>
+</tr>
+
+<tr>
+<td>812</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2004:0.0) at positions [4]</td>
+</tr>
+
+<tr>
+<td>812</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2010:0.0) at positions [10]</td>
+</tr>
+
+<tr>
+<td>813</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2005:0.0) at positions [5]</td>
+</tr>
+
+<tr>
+<td>813</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2008:0.0) at positions [8]</td>
+</tr>
+
+<tr>
+<td>814</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2014:10.0) at positions [14]</td>
+</tr>
+
+<tr>
+<td>814</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2015:-80.0) at positions [15]</td>
+</tr>
+
+<tr>
+<td>816</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2009:0.0) at positions [9]</td>
+</tr>
+
+<tr>
+<td>816</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2013:12.5) at positions [13]</td>
+</tr>
+
+<tr>
+<td>816</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2001:0.0) at positions [1]</td>
+</tr>
+
+<tr>
+<td>817</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2006:0.0) at positions [6]</td>
+</tr>
+
+<tr>
+<td>817</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2007:0.0) at positions [7]</td>
+</tr>
+
+<tr>
+<td>818</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2002:0.0) at positions [2]</td>
+</tr>
+
+<tr>
+<td>818</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2012:0.0) at positions [12]</td>
+</tr>
+
+<tr>
+<td>818</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Employment to population ratio, 15+, male (%) (national estimate), 2000:0.0) at positions [0]</td>
+</tr>
+
+<tr>
+<td>819</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizMapper category">com.revature.BizQuestTwo.BizMapper</td>
+<td>BizMapper.java:21</td>
+<td title="Message">Loading default configuration</td>
+</tr>
+
+<tr>
+<td>820</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:309</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.HIAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;))</td>
+</tr>
+
+<tr>
+<td>836</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:324</td>
+<td title="Message">Starting reduce phase with reducer: com.revature.BizQuestTwo.BizReducer@4eb7f003</td>
+</tr>
+
+<tr>
+<td>837</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.mapreduce.MapReduceDriver category">org.apache.hadoop.mrunit.mapreduce.MapReduceDriver</td>
+<td>MapReduceDriver.java:281</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (5.0, 5.0, -40.0, 10.0))</td>
+</tr>
+
+<tr>
+<td>841</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizReducer category">com.revature.BizQuestTwo.BizReducer</td>
+<td>BizReducer.java:36</td>
+<td title="Message">[5.0, 5.0, -40.0, 10.0]</td>
+</tr>
+
+<tr>
+<td>842</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 4	6.67	40.00	-40.00	10.00	-5.00	5.00	23.45) at positions [1]</td>
+</tr>
+
+<tr>
+<td>843</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-changes	avg-increase	avg-decrease	min	max	mean	median	std-dev, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>844</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>ReduceDriverBase.java:173</td>
+<td title="Message">Reducing input (United States	Female-Education-Secondary-Upper, (1.0, 2.0, 3.0, 4.0, -1.0))</td>
+</tr>
+
+<tr>
+<td>862</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.BizQuestTwo.BizReducer category">com.revature.BizQuestTwo.BizReducer</td>
+<td>BizReducer.java:36</td>
+<td title="Message">[1.0, 2.0, 3.0, 4.0, -1.0]</td>
+</tr>
+
+<tr>
+<td>866</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 5	2.50	1.00	-1.00	4.00	1.80	2.00	1.92) at positions [1]</td>
+</tr>
+
+<tr>
+<td>870</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (CountryName	IndicatorTitle	number-of-changes	avg-increase	avg-decrease	min	max	mean	median	std-dev, ) at positions [0]</td>
+</tr>
+
+<tr>
+<td>871</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.MapDriverBase category">org.apache.hadoop.mrunit.MapDriverBase</td>
+<td>MapDriverBase.java:148</td>
+<td title="Message">Mapping input (1, &quot;United States&quot;,&quot;USA&quot;,&quot;Educational attainment, at least completed upper secondary, population 25+, female (%) (cumulative)&quot;,&quot;SE.SEC.HIAT.UP.FE.ZS&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;40&quot;,&quot;&quot;,&quot;50&quot;,&quot;10&quot;,&quot;20&quot;)</td>
+</tr>
+
+<tr>
+<td>895</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 5.0) at positions [0, 1]</td>
+</tr>
+
+<tr>
+<td>895</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, -40.0) at positions [2]</td>
+</tr>
+
+<tr>
+<td>896</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.hadoop.mrunit.TestDriver category">org.apache.hadoop.mrunit.TestDriver</td>
+<td>TestDriver.java:225</td>
+<td title="Message">Matched expected output (United States	Female-Education-Secondary-Upper, 10.0) at positions [3]</td>
+</tr>
