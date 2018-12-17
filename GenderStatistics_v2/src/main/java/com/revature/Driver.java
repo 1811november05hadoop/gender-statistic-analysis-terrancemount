@@ -24,8 +24,10 @@ public class Driver {
 			com.revature.BizQuestThree.BizDriver.run(args);
 			break;
 		case "4":
+			com.revature.BizQuestFour.BizDriver.run(args);
+			break;
 		case "5":
-			System.out.println("not impleneted yet");
+			com.revature.BizQuestFive.BizDriver.run(args);
 		}
 		
 	}

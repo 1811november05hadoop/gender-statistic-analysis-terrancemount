@@ -27,19 +27,19 @@ public class BizMapper extends Mapper<LongWritable, Text, Text, Text>{
 	@Override
 	public void map(LongWritable key, Text value, Context context) 
 			throws IOException, InterruptedException {
-		
+
 		config.addRow(value.toString());
 
 		if(!config.isIndicatorCodeValidInRow()){
 			return;
 		}
-		
+
 		if(!config.isCountryCodeValidInRow()){
 			return;
 		}
 		processValidRow(config, CUTOFF, context);
 	}
-	
+
 	public static void processValidRow(TableConfig config, double cutoff,  Context context) 
 			throws IOException, InterruptedException{
 		LOGGER.trace(config + ", cutoff = " + cutoff + ", context<not shown>");
@@ -47,11 +47,14 @@ public class BizMapper extends Mapper<LongWritable, Text, Text, Text>{
 			context.write(new Text("~" + config.getCountryName()),
 					new Text("NO RECORDS"));
 		}
-
-		for(Map.Entry<Integer, Double> entry: config.getValues().entrySet()){
-			if(entry.getValue() < cutoff)  {
-				String outputValue = String.format("%s:%.2f%%", entry.getKey(), entry.getValue());			
-				context.write(new Text(config.getCountryName()), new Text(outputValue));
+		Map<Integer, Double> values = config.getValues();
+		int i = 1;
+		for(Map.Entry<Integer, Double> entry: values.entrySet()){
+			if(i++ == values.size()){
+				if(entry.getValue() < cutoff)  {
+					String outputValue = String.format("%s:%.2f%%", entry.getKey(), entry.getValue());			
+					context.write(new Text(config.getCountryName()), new Text(outputValue));
+				}
 			}
 		}
 	}

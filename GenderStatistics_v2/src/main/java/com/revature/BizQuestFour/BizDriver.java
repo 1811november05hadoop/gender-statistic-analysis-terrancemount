@@ -1,4 +1,4 @@
-package com.revature.BizQuestThree;
+package com.revature.BizQuestFour;
 
 import java.io.IOException;
 
@@ -19,7 +19,7 @@ public class BizDriver{
 
 		Job job = new Job();
 		
-		job.setJobName("Male Employment Percent Change Stats.");
+		job.setJobName("Female Employment Percent Change Stats.");
 		job.setJarByClass(BizDriver.class);
 		
 		FileInputFormat.setInputPaths(job, new Path(args[0]));

@@ -1,4 +1,4 @@
-package com.revature.BizQuestThree;
+package com.revature.BizQuestFive;
 
 import java.io.IOException;
 
@@ -19,14 +19,15 @@ public class BizDriver{
 
 		Job job = new Job();
 		
-		job.setJobName("Male Employment Percent Change Stats.");
+		job.setJobName("Any Indicator code from 1994 to 2004 with greater then 5 % change in the US.");
 		job.setJarByClass(BizDriver.class);
 		
 		FileInputFormat.setInputPaths(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
 		
 		job.setMapperClass(BizMapper.class);
-		job.setReducerClass(BizReducer.class);
+		
+		job.setNumReduceTasks(0);
 		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);
