@@ -1,4 +1,4 @@
-package com.revature.configuration;
+package com.revature.Util;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -6,10 +6,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-import org.apache.log4j.Logger;
-
-public class MapConfiguration {
-	private static Logger LOGGER = Logger.getLogger(MapConfiguration.class);
+public class TableConfig {
+	//private static Logger LOGGER = Logger.getLogger(TableConfig.class);
 	public static final int MIN_YEAR = 1960;
 	public static final int MAX_YEAR = 2016;
 	public static final int NUM_YEARS = MAX_YEAR - MIN_YEAR;
@@ -17,6 +15,8 @@ public class MapConfiguration {
 	public static final String COUNTRY_NAME = "COUNTRY_NAME";
 	public static final String INDICATOR_NAME = "INDICATOR_NAME";
 	public static final String INDICATOR_CODE = "INDICATOR_CODE";
+	public static int minyear;
+	public static int maxyear;
 
 	Set<String> indicatorCodes = new HashSet<>();
 	Set<String> countryCodes = new HashSet<>();

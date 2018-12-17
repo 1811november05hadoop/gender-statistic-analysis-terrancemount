@@ -1,4 +1,4 @@
-package com.revature.map;
+package com.revature.BizQuestOne;
 
 import java.io.IOException;
 import java.util.Map;
@@ -8,18 +8,18 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.log4j.Logger;
 
-import com.revature.configuration.MapConfiguration;
+import com.revature.Util.TableConfig;
 
 
-public class CountryPercentageMapper extends Mapper<LongWritable, Text, Text, Text>{
-	private static Logger LOGGER = Logger.getLogger(CountryPercentageMapper.class);
+public class BizMapper extends Mapper<LongWritable, Text, Text, Text>{
+	private static Logger LOGGER = Logger.getLogger(BizMapper.class);
 	public static final Double CUTOFF =	30.0;
-	public static MapConfiguration config;
+	public static TableConfig config;
 
 
 	static{
 		if(config == null){
-			config = new MapConfiguration();
+			config = new TableConfig();
 			config.addIndicatorCodes("SE.SEC.CUAT.UP.FE.ZS");
 		}
 	}
@@ -40,7 +40,7 @@ public class CountryPercentageMapper extends Mapper<LongWritable, Text, Text, Te
 		processValidRow(config, CUTOFF, context);
 	}
 	
-	public static void processValidRow(MapConfiguration config, double cutoff,  Context context) 
+	public static void processValidRow(TableConfig config, double cutoff,  Context context) 
 			throws IOException, InterruptedException{
 		LOGGER.trace(config + ", cutoff = " + cutoff + ", context<not shown>");
 		if(config.isValuesEmpty()){

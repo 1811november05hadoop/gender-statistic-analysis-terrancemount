@@ -1,4 +1,4 @@
-package com.revature.map;
+package com.revature.BizQuestTwo;
 
 import java.io.IOException;
 import java.util.Map;
@@ -9,18 +9,17 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.log4j.Logger;
 
-import com.revature.configuration.MapConfiguration;
+import com.revature.Util.TableConfig;
 
-public class ChangeMagnitudeMapper  extends Mapper<LongWritable, Text, Text, DoubleWritable>{
-	private static Logger LOGGER = Logger.getLogger(ChangeMagnitudeMapper.class);
+public class BizMapper  extends Mapper<LongWritable, Text, Text, DoubleWritable>{
+	private static Logger LOGGER = Logger.getLogger(BizMapper.class);
 	public static final int EARIEST_YEAR = 2000;
-	public static MapConfiguration config;
-
-
+	public static TableConfig config;
 	static{
+		
 		if(config == null){
 			LOGGER.trace("Loading default configuration");
-			config = new MapConfiguration();
+			config = new TableConfig();
 			config.addIndicatorCodeString(""
 					+ "SE.PRM.HIAT.FE.ZS,"
 					+ "SE.SEC.HIAT.LO.FE.ZS,"
@@ -40,7 +39,7 @@ public class ChangeMagnitudeMapper  extends Mapper<LongWritable, Text, Text, Dou
 	@Override
 	public void map(LongWritable key, Text value, Context context) 
 			throws IOException, InterruptedException {
-
+		
 		config.addRow(value.toString());
 
 		if(!config.isIndicatorCodeValidInRow()){
@@ -58,7 +57,7 @@ public class ChangeMagnitudeMapper  extends Mapper<LongWritable, Text, Text, Dou
 		processValidRow(config, EARIEST_YEAR, context);
 	}
 
-	public static void processValidRow(MapConfiguration config, int earliestYear,  Context context) 
+	public static void processValidRow(TableConfig config, int earliestYear,  Context context) 
 			throws IOException, InterruptedException{
 
 		int prevYear = -1;
@@ -75,7 +74,7 @@ public class ChangeMagnitudeMapper  extends Mapper<LongWritable, Text, Text, Dou
 
 				for(int i = prevYear + 1; i <= year; i++ ){
 					if(i >= earliestYear){
-						context.write(new Text(config.getCountryName() + ", " 
+						context.write(new Text(config.getCountryName() + "\t" 
 								+ config.getShortIndicatorTitleFromRow()),
 								new DoubleWritable(diff));
 					}
@@ -86,7 +85,5 @@ public class ChangeMagnitudeMapper  extends Mapper<LongWritable, Text, Text, Dou
 		}
 	}
 }
-
-
 
 

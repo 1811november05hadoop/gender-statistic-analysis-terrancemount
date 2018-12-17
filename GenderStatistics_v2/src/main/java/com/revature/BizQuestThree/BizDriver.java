@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.BizQuestThree;
 
 import java.io.IOException;
 
@@ -9,11 +9,8 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.log4j.Logger;
 
-import com.revature.map.CountryPercentageMapper;
-import com.revature.reduce.CountryPercentageReducer;
-
-public class BizQuestOne{
-	private static Logger LOGGER = Logger.getLogger(BizQuestOne.class);
+public class BizDriver{
+	private static Logger LOGGER = Logger.getLogger(BizDriver.class);
 	
 	public static void run(String... args) 
 			throws IOException, InterruptedException, ClassNotFoundException{
@@ -22,14 +19,14 @@ public class BizQuestOne{
 
 		Job job = new Job();
 		
-		job.setJobName("Find Countries with women graduation under thirty percent.");
-		job.setJarByClass(BizQuestOne.class);
+		job.setJobName("United States female education change statistis.");
+		job.setJarByClass(BizDriver.class);
 		
 		FileInputFormat.setInputPaths(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
 		
-		job.setMapperClass(CountryPercentageMapper.class);
-		job.setReducerClass(CountryPercentageReducer.class);
+		job.setMapperClass(BizMapper.class);
+		job.setReducerClass(BizReducer.class);
 		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);

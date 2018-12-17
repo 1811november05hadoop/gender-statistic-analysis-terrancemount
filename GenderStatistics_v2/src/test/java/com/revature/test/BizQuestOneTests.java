@@ -3,7 +3,6 @@ package com.revature.test;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mrunit.mapreduce.MapDriver;
@@ -12,11 +11,11 @@ import org.apache.hadoop.mrunit.mapreduce.ReduceDriver;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.revature.map.CountryPercentageMapper;
-import com.revature.reduce.CountryPercentageReducer;
+import com.revature.BizQuestOne.BizMapper;
+import com.revature.BizQuestOne.BizReducer;
 
 
-public class CountryPercentTests {
+public class BizQuestOneTests {
 	private MapDriver<LongWritable, Text, Text, Text> mapDriver;
 	private ReduceDriver<Text, Text, Text, Text> reduceDriver;
 	private MapReduceDriver
@@ -25,13 +24,13 @@ public class CountryPercentTests {
 	@Before
 	public void setup() {
 
-		CountryPercentageMapper mapper = 
-				new CountryPercentageMapper();
+		BizMapper mapper = 
+				new BizMapper();
 		
 		mapDriver = new MapDriver<LongWritable, Text, Text, Text>();
 		mapDriver.setMapper(mapper);
 		
-		CountryPercentageReducer reducer = new CountryPercentageReducer();
+		BizReducer reducer = new BizReducer();
 		reduceDriver = new ReduceDriver<Text, Text, Text, Text>();
 		reduceDriver.setReducer(reducer);
 		

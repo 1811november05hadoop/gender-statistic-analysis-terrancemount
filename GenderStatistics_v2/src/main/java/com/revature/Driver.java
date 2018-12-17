@@ -15,9 +15,14 @@ public class Driver {
 		
 		switch(args[2]){
 		case "1":
-			BizQuestOne.run(args);
+			com.revature.BizQuestOne.BizDriver.run(args);
+			break;
 		case "2":
+			com.revature.BizQuestTwo.BizDriver.run(args);
+			break;
 		case "3":
+			com.revature.BizQuestThree.BizDriver.run(args);
+			break;
 		case "4":
 		case "5":
 			System.out.println("not impleneted yet");

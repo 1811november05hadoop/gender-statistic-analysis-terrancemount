@@ -1,4 +1,4 @@
-package com.revature.reduce;
+package com.revature.BizQuestOne;
 
 import java.io.IOException;
 import java.util.Comparator;
@@ -9,8 +9,8 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.log4j.Logger;
 
-public class CountryPercentageReducer extends Reducer<Text, Text, Text, Text> {
-	public static Logger LOGGER = Logger.getLogger(CountryPercentageReducer.class);
+public class BizReducer extends Reducer<Text, Text, Text, Text> {
+	public static Logger LOGGER = Logger.getLogger(BizReducer.class);
 	
 	public void reduce(Text key, Iterable<Text> iterableValues, Context context)
 			throws IOException, InterruptedException{
